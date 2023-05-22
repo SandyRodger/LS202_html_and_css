@@ -64,4 +64,30 @@
   </body>
 </html>
 ```
-  
+  - Notice how the `head` and `body` come inside the `html` element.
+  - The `head` element includes the character encoding of the page via the `<meta charset="utf-8">` tag.
+  - The `body` element includes a heading with the `<h1>` element and a paragraph with the `<p>` element.
+  - This is called 'nesting'. Nesting is represented with indentation.
+
+### Self closing elements
+
+- Like the `<meta>` tag in the example above, some elements are self-closing.
+- Other common self-closing elements are:
+  - `<br>`
+  - `<img>`
+  - `<meta>`
+  - `<wbr>`
+  - `<embed>`
+  - `<input>`
+  - `<param>`
+  - `<hr>`
+  - `<link>`
+  - `<source>`
+
+### Code validation
+
+- Use these W3C [HTML](http://validator.w3.org/) and [CSS](http://jigsaw.w3.org/css-validator/) validators to avoid errors. THese teach usbest practice as well as ironing oput mistakes.
+
+## [In Practice](https://learn.shayhowe.com/html-css/building-your-first-web-page/#practice-1)
+
+- 
