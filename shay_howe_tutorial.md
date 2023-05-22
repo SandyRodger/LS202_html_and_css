@@ -229,6 +229,38 @@ selects the following html:
 - CSS in your HTML
 - CSS resets
 
-# [Getting to know HTML](https://learn.shayhowe.com/html-css/getting-to-know-html/)
+# [Lesson 2: Getting to know HTML](https://learn.shayhowe.com/html-css/getting-to-know-html/)
 
-- 
+- Which HTML elements are best used for which types of content.
+- How are elements visually displayed on a web-page.
+- What do different elements mean semantically.
+- Using the right elements goes a long way.
+
+## Semantics overview
+## Identifying divisions and spans
+### Block v. inline elements
+### COmments with HTML and CSS
+## Text-based elements
+### Headings
+### Paragraphs
+### Bold text with strong
+### Italicized text with emphasis
+## Building Structure.
+### Header
+### Navigation
+### Article
+### Section
+### Aside
+### Footer
+## In practice
+### Encoding special characters
+## Creating hyperlinks
+### Wrapping block-level elements with anchors
+### Relative and Absolute paths
+### Linking to an email address
+### Opening links in a new window
+### Linking to parts of a new page
+## In practice
+## Summary
+
+# [Getting to know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/)
