@@ -14,7 +14,10 @@
 
 ### [introduction](https://launchschool.com/lessons/4495fbf7/assignments/911a8332)
 
+- type out all the examples and save the files in your development system. It's necessary for muscle memory and deeper learning.
 #### What to focus on
+
+- Understanding enough html and css to construct pretty web-pages. But you don't need to be an expert.
 
 ##### Vocabulary
 
@@ -23,9 +26,34 @@
 - document type definition (DOCTYPE, DTD)
 - attribute
 - selector
+- property
+- id, class, name
+
+##### Understanding the difference between html and css
+
+- They intertwine and seem to do the same thing, but they are distinct.
+  - html: structure and content of a web-page
+  - css: apearance / presentation
+- There can be some overlap.
+
+##### html and css syntax
+
+- There isn't a lot, so learnt it well.
+
+##### Structure of a web-page
+
+- Web-pages always start out with some boiler-plate code that define the general layout of the document. 
+- This has 
+  - DOCTYPE
+  - <html>
+  - <head>
+  - <body>
+  
+##### Basic html elements
+  
 - 
 
-3	Install Software
+  3	Install Software
 4	Getting Started
 5	Creating an HTML Skeleton
 6	Classes, IDs, and Names
