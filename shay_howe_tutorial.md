@@ -1,6 +1,4 @@
-# Tutorial
-
-## [Building your first web page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
+# [Lesson 1 : Building your first web page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
 
 - Build it with HTML and CSS.
 
@@ -13,9 +11,9 @@
 ## [Understanding Common HTML terms](https://learn.shayhowe.com/html-css/building-your-first-web-page/#common-html-terms)
 
 - Elements:
-  - Designators that define the structure and contentof objects within a page:
+  - Designators that define the structure and content of objects within a page:
     - Multiple levels of headings `<h1>` to `<h6>`
-    - Parapgraphs `<p>`
+    - Paragraphs `<p>`
     - `<a>`
     - `<div>`
     - `<span>`
@@ -86,8 +84,151 @@
 
 ### Code validation
 
-- Use these W3C [HTML](http://validator.w3.org/) and [CSS](http://jigsaw.w3.org/css-validator/) validators to avoid errors. THese teach usbest practice as well as ironing oput mistakes.
+- Use these W3C [HTML](http://validator.w3.org/) and [CSS](http://jigsaw.w3.org/css-validator/) validators to avoid errors. These teach us best practice as well as ironing out mistakes.
 
 ## [In Practice](https://learn.shayhowe.com/html-css/building-your-first-web-page/#practice-1)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Styles Conference</title>
+  </head>
+  <body>
+    <h1>Styles Conference</h1>
+    <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
+  </body>
+</html>
+```
+
+## [Understanding Common CSS terms](https://learn.shayhowe.com/html-css/building-your-first-web-page/#common-css-terms)
+
+### Selectors
+
+- Which elements in the html page should have a style applied to it. For example, every paragraph, or only a specific paragraph.
+- Selectors usually target a class or id value, or target the type of element, like `<p>` or `<h1>`.
+- In CSS selectors are followed by curly brackets.
+- For example, this selector targets all `p` elements: `p { ... }`.
+
+### Properties
+
+- Once an element has been selected, the properties of these elements' style must be chosen. So these come after a selector, within curly brackets and before a colon.
+- Properties include:
+  - font-size
+  - background
+  - color
+  - height
+  - width
+- The example below has us defining the font-size and colour of all `p` elements:
+
+```css
+p {
+  color: ... ; 
+  font-size ...;
+  }
+```
+
+### Values
+
+- Values are the text between the colon and the semi-colon:
+
+```css
+p {
+  color: orange ;
+  font-size: 16px ;
+}
+```
+
+<img width="319" alt="Screenshot 2023-05-22 at 14 49 50" src="https://github.com/SandyRodger/LS202_html_and_css/assets/78854926/31a54d36-5788-4940-8ad6-b55e69a1212a">
+
+## [Working with Selectors](https://learn.shayhowe.com/html-css/building-your-first-web-page/#working-with-selectors)
+
+- Type
+- Class
+- Id
+
+### Type Selectors
+
+- Type selectors target elements by their type. For example we could use a type selector of `div` to target all `<div>` elements.
+- For example this css : `div {...}` would select the following html:
+
+```html
+<div>...</div>
+<div>...</div>
+```
+
+### Class Selectors
+
+- Let us select an element based on their class attribute. So you can apply the same style to different elements at the same time by using the same class attribute value across multiple elements.
+- In CSS classes are demarked by a leading full-stop followed by the class attribute value. So here the class selector will select any element containing the class attribute value of `awesome` (both division and paragraph elements):
+```css
+.awesome { ... }
+```
+selects the following html:
+```html
+<div class="awesome">...</div>
+<p class="awesome">...</p>
+```
+
+### ID selectors
+
+- ID selectors are even more precise than class selectors. They use an element's ID attribute as the selector.
+- Within CSS, ID selectors are denoted with a leading hash sign, followed by the id attribute value.
+```css
+#shayhowe { ... }
+```
+selects the following html:
+```html
+<div id="shayhowe">...</div>
+```
+
+### Additional selectors
+
+- There are many more selectors. See some [here](https://learn.shayhowe.com/advanced-html-css/complex-selectors/)
+- For example:
+  - Child selectors
+    - The descendant selector
+    - Direct child selector
+  - Sibling selectors
+    - general sibling selector
+    - adjacent sibling selector
+  - Attribute selectors
+
+## [Referencing CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/#referencing-css)
+
+- To make our CSS talk to our HTML we have to reference the CSS file in our HTML file.
+- Best practice is to include all of our styles in a single external style-sheet. This should be referenced from within the `head` element of our HTML document.
+- This is helpful for organising our styles so that they are uniformly applied site-wide and changes can be easily implemented.
+- (Another options for adding CSS is to use internal and inline styles, but these methods are quite unwieldy and cumbersome).
+- Then an exercise to add a `main.css` stylesheet and reference it in `index.html`.
+
+## Using CSS Resets
+
+- Browsers have default settings for CSS.To ensure cross-browser compatibility CSS resets are now commonly used.
+- CSS cascades from top to bottom, so we put the reset at the top to override default settings. 
+- Many resets are available. A popular one is the [Eric Meyers](http://meyerweb.com/eric/tools/css/reset/) reset.
+
+### Cross browser compatibility testing
+
+- Websites don't have to look the same in every browser, but they should be close.
+- You must decide which browsers you want to support and to what degree.
+
+## [In Practice 2](https://learn.shayhowe.com/html-css/building-your-first-web-page/#practice-2)
+
+- Add assets folder
+- override defaults with Eric Meyers css settings.
+
+## [Summary](https://learn.shayhowe.com/html-css/building-your-first-web-page/#summary)
+
+- The difference between HTML and CSS
+- HTML elements, Tags and Attributes.
+- The structure of your first webpage.
+- CSS selectors properties and values
+- CSS selectors
+- CSS in your HTML
+- CSS resets
+
+# [Getting to know HTML](https://learn.shayhowe.com/html-css/getting-to-know-html/)
 
 - 
