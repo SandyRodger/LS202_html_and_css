@@ -163,14 +163,23 @@
 17	Summary
 18	Quiz 1
 
-|  | Once | Twice | Thrice | Comprehension | Retention
-| :--- | :---: | :---: | :---: | :--- | :---
-|1. Introduction| 8/5/23||| 100%| -%
-|2.	What to Focus On|8/5/23||| -%| -%
-|3.	HTTP: Past, Present, and Future|8/5/23||| 100%| -%
-|4.	Web Performance and HTTP Optimizations	|8/5/23||| 100%| -%
-|5.	Browser Networking APIs	|8/5/23||| 100%| -%
-|6.	Peer to Peer Networking	|8/5/23||| 100%| -%
-|7.	Optional: Blog Post	|8/5/23||| 100%| -%
-|8.	Summary	|8/5/23||| 100%| -%
-|9.	Course Feedback|8/5/23|||-| -
+|  | Once | Twice | Thrice | Got it?
+| :--- | :---: | :---: | :---: | :--- |
+|1. Welcome| 18/5/23 |||50%|
+|2	Introduction|	22/5/22 |||50%|
+|3	Install Software|	22/5/22 | ||50%|
+|4	Getting Started|22/5/22 | ||50%|
+|5	Creating an HTML Skeleton|	
+|6	Classes, IDs, and Names|	
+|7	Practice Problems: Semantics|	
+|8	Walkthrough Project: A Simple Web Page|
+|9	Walkthrough Project: Adding Style to Your Web Page|	
+|10	Guided Project: A Personal Profile|	
+|11	Practice Problems: Text Formatting|	
+|12	On Your Own: Creating a Simple Page	|
+|13	Practice Problems: CSS Selectors|	
+|14	CSS Diner	|
+|15	Using the Chrome Inspector	|
+|16	HTML and CSS Style Guide|	
+|17	Summary|	
+|18	Quiz 1|
