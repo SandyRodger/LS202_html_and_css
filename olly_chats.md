@@ -6,5 +6,7 @@ LS_170 Assessment:
 Todobot.ai
 - How about a categoriser function? 
 
-LS_202:
-- 
+LS_202
+
+- Is this section's relevency challenged by ai or ever new website-template services?
+- How often do YOU encounter html/css ? 
