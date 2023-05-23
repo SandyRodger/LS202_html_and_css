@@ -4,6 +4,7 @@ LS_170 Assessment:
 - talk about open-bookness of the exam.
   - [assessment rules](https://launchschool.com/gists/99b650e4)
   - [my assessment answers](https://launchschool.com/exams/b443abb4#qna)
+  - [my notes-map](https://github.com/SandyRodger/LS170-171)
 
 Todobot.ai
 - How about a categoriser function? 
