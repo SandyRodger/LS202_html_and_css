@@ -23,8 +23,11 @@ LS_202
 - Is this section's relevency challenged by ai or ever new website-template services?
 - How often do YOU encounter html/css ? 
 - html linters. How do these work?
+- Semantic HTML
+  - Tailwind / Bootstrap
 
 Other:
 
 - Agile planning/developing?
 - "Our dependency on technology is growing faster than our ability to secure it" - [I am the Cavalry](https://www.iamthecavalry.org/wp-content/uploads/2014/04/Cavalry-Brochure-v1.01.pdf)
+- What do you think about the apocalyptic warnings about AI ?
