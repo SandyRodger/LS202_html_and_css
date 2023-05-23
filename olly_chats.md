@@ -1,4 +1,4 @@
-## 22.5.23  
+## 23.5.23 : 11:00  
 
 LS_170 Assessment:
 - talk about open-bookness of the exam.
