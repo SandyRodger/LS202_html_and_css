@@ -2,13 +2,20 @@
 
 LS_170 Assessment:
 - talk about open-bookness of the exam.
+  - [assessment rules](https://launchschool.com/gists/99b650e4)
+  - [my assessment answers](https://launchschool.com/exams/b443abb4#qna)
 
 Todobot.ai
 - How about a categoriser function? 
 
 RB175
 
-- Building Networked applications
+- [Building Networked applications](https://launchschool.com/lessons/15115b5d/assignments/f2a825e3)
+  - Sinatra
+  - ToDo project
+  - Securing an Application
+  - Javascript
+  - File-based CMS
 
 LS_202
 
@@ -19,3 +26,4 @@ LS_202
 Other:
 
 - Agile planning/developing?
+- "Our dependency on technology is growing faster than our ability to secure it" - [I am the Cavalry](https://www.iamthecavalry.org/wp-content/uploads/2014/04/Cavalry-Brochure-v1.01.pdf)
