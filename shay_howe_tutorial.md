@@ -233,10 +233,29 @@ selects the following html:
 
 - Which HTML elements are best used for which types of content.
 - How are elements visually displayed on a web-page.
-- What do different elements mean semantically.
+- What do different elements mean semantically.        ----> ?
 - Using the right elements goes a long way.
 
-## Semantics overview
+## [Semantics overview](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
+
+- Semantic: 'relating to meaning in language or logic'.
+- [Semantics in HTML](https://boagworld.com/dev/semantic-code-in-html/): Giving content on the page structure and meaning by using the proper element.
+- It desctribes the value of the content regardless of its style or appearance.
+- So the HTML describes what the resource is, and never crosses over into how it should be displayed, ie "large-image".
+- Why write semantic HTML:
+  - Accessibility: for services that render a web-page for the disabled.
+  - SEA (Search Engine Optimisation)
+  - Maintainability and Readability
+  - Cross device compatibility.
+  - Future-proofing.
+  - Improved collaboration
+  - Faster page-load times
+- How to make code more semantic:
+  - Make sure HTML tags match their content. so `<h1>` for main headings, `<ul>` and `<ol>` for lists.
+  - Minimize the use if tags that are not semantically meaningful, like `<div>` and `<span>`.
+  - Use [ARIA attributes](https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility) (Accessible Rich Internet Applications) to add additional information to HTML tags. For example, `aria-label` or `aria-describedby`
+  - You can even link more data with an [RDFa](https://rdfa.info), but this is extra.
+
 ## Identifying divisions and spans
 ### Block v. inline elements
 ### COmments with HTML and CSS
