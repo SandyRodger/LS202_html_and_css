@@ -31,3 +31,8 @@ Other:
 - Agile planning/developing?
 - "Our dependency on technology is growing faster than our ability to secure it" - [I am the Cavalry](https://www.iamthecavalry.org/wp-content/uploads/2014/04/Cavalry-Brochure-v1.01.pdf)
 - What do you think about the apocalyptic warnings about AI ?
+
+What we talked about:
+
+ - Getting things done - book by David Allen
+ - todobot.ai and what comes next
