@@ -252,13 +252,19 @@ selects the following html:
   - Faster page-load times
 - How to make code more semantic:
   - Make sure HTML tags match their content. so `<h1>` for main headings, `<ul>` and `<ol>` for lists.
-  - Minimize the use if tags that are not semantically meaningful, like `<div>` and `<span>`.
+  - Minimize the use of tags that are not semantically meaningful, like `<div>` and `<span>`.
   - Use [ARIA attributes](https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility) (Accessible Rich Internet Applications) to add additional information to HTML tags. For example, `aria-label` or `aria-describedby`
   - You can even link more data with an [RDFa](https://rdfa.info), but this is extra.
 
-## Identifying divisions and spans
-### Block v. inline elements
-### COmments with HTML and CSS
+## [Identifying divisions and spans](https://learn.shayhowe.com/html-css/getting-to-know-html/#divs-and-spans)
+
+- `<div>`s and `<span>`s are HTML elements that act as containers, just for styling. They don't have any intrinstic meaning. That means that ` `<p>` element is understood to be a paragraph, but a `div` and `span` are just neutral containers.
+
+## Block v. inline elements
+
+- Most elements are one of these  
+  
+### Comments with HTML and CSS
 ## Text-based elements
 ### Headings
 ### Paragraphs
