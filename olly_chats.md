@@ -36,3 +36,4 @@ What we talked about:
 
  - Getting things done - book by David Allen
  - todobot.ai and what comes next
+ - [atoms to bits interfaces](https://www.accenture.com/gb-en/insights/technology/technology-trends-2023)
