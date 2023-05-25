@@ -568,11 +568,11 @@ p {
 ```
 
 ```css
-#food {                  # => here is the 'ID' selector, with a higher specificity weight
+#food {                  /# => here is the 'ID' selector, with a higher specificity weight #/
   background: green;    
 }
-p {                      # => here is the 'type' selector, with a lower specificity weight
-  background: orange;    # => So even though `p` is read last, `#food` takes precedence and the paragraph will be green.
+p {                      /# => here is the 'type' selector, with a lower specificity weight. #/
+  background: orange;    /# => So even though `p` is read last, `#food` takes precedence and the paragraph will be green. #/
 }
 ```
 
