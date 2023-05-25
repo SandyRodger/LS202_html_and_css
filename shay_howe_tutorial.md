@@ -463,9 +463,72 @@ These are differentiated by their href attribute values, which will be their pat
 ```
 
 ### Linking to an email address
+
+- To create a hyper-link to an email address ("email me!"), that opens a users email, and maybe even populates part of the email.
+- At a minimum the sender address will be populated. 
+- Other fields which might be populated are subject line, body text.
+- To make an email link the `href` attribute should be followed by `mailto:` and then the email address. ie `mailto:abmrodger@gmail.com`.
+- To add a subject line, include `subject=` after the email address, seperated from email address by a `?`. Encode spaces with `%20` and line breaks with ` %0A`.
+- Body text is added with `body=`. 
+- Parameters are seperated with `&`s. 
+- Altogether it could look like this: 
+`<a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>`
+
 ### Opening links in a new window
+
+- Typically links open in the same window, but you can make them open in new windows.
+- To do this we use the `target` attribute with a value of `_blank`, which means new window.
+- For example: `<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>`
+
 ### Linking to parts of a new page
+
+- A common example is 'back-to-top` links.
+- We do this by setting the `id` attribute on the element we want to link, then referencing that `id` attribute in the anchor element's `href` attribute.
+
+```html
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+```
+
 ## In practice
+
+- Adding multiple pages to the `styles-conference` website and hyper-linking them.
+
 ## Summary
 
-# [Getting to know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/)
+- Semantics are for giving our HTML structure and meaning.
+- We covered:
+  - What semantics are and why they are important.
+  - `<div>`s and `<span>`s and the difference between block/inline elements.
+  - Different text-based elements for representing content on a page.
+  - The HTML5 structural elements.
+  - Hyperlinks for navigating to different pages. 
+
+# [Lesson 3: Getting to know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/)
+
+## [The Cascade](https://learn.shayhowe.com/html-css/getting-to-know-css/#cascade)
+### Cascading properties
+## [Calculating Specificity](https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity)
+### Specificity points
+## [Combinging Selectors](https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors)
+### Spaces within selectors
+### Specificity within combined selectors
+## [Layering Styles with Multiple Classes](https://learn.shayhowe.com/html-css/getting-to-know-css/#multiple-classes)
+## [Common CSS property Values](https://learn.shayhowe.com/html-css/getting-to-know-css/#css-property-values)
+### Colors
+### Keyword Colors
+### Hexadecimal colors
+### The millions of Hexadecimal colors
+### RGB and RGBa colors
+### HSL & HSLa colors
+### Lengths
+### Absolute lengths
+### Pixels
+### Relative Lengths
+### Percentages
+### Em
+## [Summary](https://learn.shayhowe.com/html-css/getting-to-know-css/#summary)
+
