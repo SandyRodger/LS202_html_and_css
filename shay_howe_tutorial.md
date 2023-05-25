@@ -509,10 +509,74 @@ These are differentiated by their href attribute values, which will be their pat
 
 # [Lesson 3: Getting to know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/)
 
+- Allows us to:
+  - Add layout/design to our pages.
+  - Share those styles among specific elements and across pages.
+- Here we will look at how styles are rendered, specifically:
+  - How different types of selectors work.
+  - How the order of those selectors can affect the rendering of the styles.
+  - Properties used a lot in CSS, specifically color and length.
+
 ## [The Cascade](https://learn.shayhowe.com/html-css/getting-to-know-css/#cascade)
+
+- In CSS all styles cascade from the top of the style sheet to the bottom.
+- Different styles are added and overwritten in this process.
+- Here is an example of overriding where the web-page will render as green with 24 pixel text:
+
+```css
+p {
+  background: orange;
+  font-size: 24px;
+}
+p {
+  background: green;
+}
+
+```
+
 ### Cascading properties
+
+- This also applies to properties within elements.
+- Here is an example of this, where the paragraphs will render in green:
+```css
+p {
+  background: orange;
+  background: green;
+}
+```
+
 ## [Calculating Specificity](https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity)
-### Specificity points
+
+-  We can cause errors in the cascade by using contradictory selectors.
+-  Every CSS selector has a specificity weight.
+-  Its specificity weight + position in the cascade = how well it will be rendered.
+-  In lesson 1 we looked at `id`, `type` and `class` selectors, each of which have a different weight.
+
+|Selector| specifity weight | point value |
+| :--- | :---: | :---: |
+|`type`| lowest| `0-0-1`|
+|`class`| medium| `0-1-0`|
+|`ID`| high | `1-0-0`|
+
+-  Specificity points are calculated with these three columns.
+-  Specificity points are intentionally hyphenated because they are not computed using base-10 (decimal).So `class` selectors don't have a value of 10.
+-  The higher the points, the more precedence they have when a style clashes with another.
+-  For example is a paragraph element is styled in one place with a type selector and in another place with a ID selector, the ID selector will win, no matter where the it appears in the cascade.
+
+```html
+<p id="food">...</p>
+```
+
+```css
+#food {                  # => here is the 'ID' selector, with a higher specificity weight
+  background: green;    
+}
+p {                      # => here is the 'type' selector, with a lower specificity weight
+  background: orange;    # => So even though `p` is read last, `#food` takes precedence and the paragraph will be green.
+}
+```
+
+
 ## [Combinging Selectors](https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors)
 ### Spaces within selectors
 ### Specificity within combined selectors
