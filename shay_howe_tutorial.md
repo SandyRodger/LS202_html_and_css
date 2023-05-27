@@ -552,11 +552,11 @@ p {
 -  Its specificity weight + position in the cascade = how well it will be rendered.
 -  In lesson 1 we looked at `id`, `type` and `class` selectors, each of which have a different weight.
 
-|Selector| specifity weight | point value |
-| :--- | :---: | :---: |
-|`type`| lowest| `0-0-1`|
-|`class`| medium| `0-1-0`|
-|`ID`| high | `1-0-0`|
+|Selector| specifity weight | point value | example in HTML| and corresponding example in CSS
+| :--- | :---: | :---: |:---: |:---: |
+|`type`| lowest| `0-0-1`|`<p> ... </p>`|p {background: orange}|
+|`class`| medium| `0-1-0`|`<div class=ball>;<p> ... </p> ; </div>`|`.hotdog p {background: brown;}`|
+|`ID`| high | `1-0-0`| `<p id="food">...</p>` |`#food { ... }`
 
 -  Specificity points are calculated with these three columns.
 -  Specificity points are intentionally hyphenated because they are not computed using base-10 (decimal).So `class` selectors don't have a value of 10.
@@ -576,11 +576,60 @@ p {                      /* => here is the 'type' selector, with a lower specifi
 }
 ```
 
+## [Combining Selectors](https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors)
 
-## [Combinging Selectors](https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors)
+- We combine selectors to be more specific.
+- So the following example is for all paragraphs, IF they are wrapped in an element of the `hotdog` class THEN turn them brown UNLESS the sub-class attribute is `mustard` in which cass turn it yellow.
+
+```html
+<div class="hotdog">
+  <p>...</p>
+  <p>...</p>
+  <p class="mustard">...</p>
+</div>
+
+```
+
+```css
+.hotdog p {               */ here the combined selector is .hotdog p and the key selector is p /*
+  background: brown;
+}
+.hotdog p.mustard {      */ here the combined selector is .hotdog p.mustard and the key selector is .mustard /*
+  background: yellow;
+}
+```
+- When combined, selectors are read right to left.
+- The selector farthest to the right (ie, read first) is called the 'key selector'
+- The 'key selector' will determine exactly which element the styles will be applied to. The other elements are 'pre-qualifiers'.
+- The line `.hotdog p.mustard` targets paragraphs with a class of `mustard` wrapped in an element with the class `hotdog`.
+- 
+
 ### Spaces within selectors
+
+- `.hotdog p.mustard` why is there a space after `hotdog`, but not after `mustard` ?
+- Spaces are key in selectors, so this difference important.
+- The absence of a space between `p` and `.mustard` means the selector will only select paragraphs with a class of `mustard`. Without the `p` and surrounded by spaces, `mustard` would tell the selector to select everything with a `mustard` class.
+- Best practice is to not prefix a class selector with a type selector. So `.hotdog .mustard.` should be enough.
+
 ### Specificity within combined selectors
+
+- Combining selectors creates a new specificity weight. We can calculate the new specificity weight by adding together the combined weights of the elements.
+- For example:
+  - `.hotdog p`
+  - class selector + type selector.
+  - `0-1-0` + '`0-0-1`
+  - = `0-1-1`
+- Example 2:
+  - `.hotdog p.mustard`
+  - `0-1-0` + '`0-1-1`
+  - = `0-2-1`
+- So example 2 would take precedence even if example 1 came after example 2 in the stylesheet.
+- Keep an eye on these specificity weights because the higher they get the more likely the cascade is to break.
+
 ## [Layering Styles with Multiple Classes](https://learn.shayhowe.com/html-css/getting-to-know-css/#multiple-classes)
+
+- 
+
 ## [Common CSS property Values](https://learn.shayhowe.com/html-css/getting-to-know-css/#css-property-values)
 ### Colors
 ### Keyword Colors
