@@ -125,7 +125,7 @@
 
 - Most languages have linters
 
-## Getting Started
+## [Getting Started](https://launchschool.com/lessons/4495fbf7/assignments/ea41131e)
 
 - tutorial for the basics.
 
@@ -146,25 +146,31 @@
 
 ### Read the tutorial
 
-- [Building your first web-page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
+- [Lesson 1: Building your first web-page](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-1--building-your-first-web-page)
+- [Lesson 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-2-getting-to-know-html)
+- [Lesson 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-3-getting-to-know-css)
 
+### Afterthoughts
 
+- Be aware of the difference between element and tag. Tags contain elements.
+- Tag types:
+  - Opening tag: `<p>`
+  - Closing tag </p>  # this isn't rendering properly, but it's the closing `p` tag
+  - Self-closing tag `<br>` (most tags are not self closing).
+- HTML elements will always have the first 2, or the 3rd.
+- Terminology can be mixed up for this. We can talk about `p` as the tag or `<p>` as the tag. We may also say `p` element instead of `<p> ... </p>` element.
+- Attributes can use double or single quotes:
 
+```<a href="another_page.html">Next page</a>```. double quotes are better
 
-5	Creating an HTML Skeleton
-6	Classes, IDs, and Names
-7	Practice Problems: Semantics
-8	Walkthrough Project: A Simple Web Page
-9	Walkthrough Project: Adding Style to Your Web Page
-10	Guided Project: A Personal Profile
-11	Practice Problems: Text Formatting
-12	On Your Own: Creating a Simple Page
-13	Practice Problems: CSS Selectors
-14	CSS Diner
-15	Using the Chrome Inspector
-16	HTML and CSS Style Guide
-17	Summary
-18	Quiz 1
+or
+
+```<a href='another_page.html'>Next page</a>```
+
+- If your browser considers an attribute to be invalid it simply ignores them. This can make debugging hard.
+- Do the rest of the tutorial if you feel like you want to know more HTML / CSS.
+
+## [Creating a HTML skeleton](https://launchschool.com/lessons/4495fbf7/assignments/a52de9d4)
 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
@@ -172,17 +178,17 @@
 |2	Introduction|	22/5/22 |||50%|
 |3	Install Software|	22/5/22 | ||50%|
 |4	Getting Started|22/5/22 | ||50%|
-|5	Creating an HTML Skeleton|	
-|6	Classes, IDs, and Names|	
-|7	Practice Problems: Semantics|	
-|8	Walkthrough Project: A Simple Web Page|
-|9	Walkthrough Project: Adding Style to Your Web Page|	
-|10	Guided Project: A Personal Profile|	
-|11	Practice Problems: Text Formatting|	
-|12	On Your Own: Creating a Simple Page	|
-|13	Practice Problems: CSS Selectors|	
-|14	CSS Diner	|
-|15	Using the Chrome Inspector	|
-|16	HTML and CSS Style Guide|	
-|17	Summary|	
-|18	Quiz 1|
+|5	Creating an HTML Skeleton|27/5/22 	| ||%|
+|6	Classes, IDs, and Names|		| ||%|
+|7	Practice Problems: Semantics|		| ||%|
+|8	Walkthrough Project: A Simple Web Page|	| ||%|
+|9	Walkthrough Project: Adding Style to Your Web Page|		| ||%|
+|10	Guided Project: A Personal Profile|		| ||%|
+|11	Practice Problems: Text Formatting|		| ||%|
+|12	On Your Own: Creating a Simple Page	|	| ||%|
+|13	Practice Problems: CSS Selectors|		| ||%|
+|14	CSS Diner	|	| ||%|
+|15	Using the Chrome Inspector	|	| ||%|
+|16	HTML and CSS Style Guide|		| ||%|
+|17	Summary|		| ||%|
+|18	Quiz 1|	| ||%|
