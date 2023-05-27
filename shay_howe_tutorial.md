@@ -628,20 +628,200 @@ p {                      /* => here is the 'type' selector, with a lower specifi
 
 ## [Layering Styles with Multiple Classes](https://learn.shayhowe.com/html-css/getting-to-know-css/#multiple-classes)
 
-- 
+- We can keep the specificity weight of our elements low by being as modular as possible. We do this by using multiple classes to layer on styles.
+- HTML elements can have more than one class attribute value, they just need to be seperated by a space.
+- In the following example we target buttons. We want the buttons to be 16px, but the background to vary depending on where they are.
+
+```html
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+```
+
+```css
+.btn {
+  font-size: 16px;
+}
+.btn-danger {
+  background: red;
+}
+.btn-success {
+  background: green;
+}
+```
+- Our styles here are clean and modular. This keeps specificity weights low and is best-practice.
 
 ## [Common CSS property Values](https://learn.shayhowe.com/html-css/getting-to-know-css/#css-property-values)
+
+- We'll look at color and length here, but there are lots more.
+
 ### Colors
+
+- CSS uses sRGB (Standard Red Green Blue), like TV and monitors. 
+- There are 4 ways to write this:
+  - keywords
+  - hexadecimal
+  - RGB
+  - HSL
+
 ### Keyword Colors
+
+- easy to rememeber, but fewer options.
+
+|Color	Name|	Hex Values	|RGB Values|	HSL Values|
+| :--- | :---: | :---: |:---: |
+|black|	#000000|	rgb(0, 0, 0)|	hsl(0, 0%, 0%)|
+|silver|	#c0c0c0	|rgb(192, 192, 192)|	hsl(0, 0%, 75%)|
+|gray|	#808080	|rgb(128, 128, 128)|	hsl(0, 0%, 50%)|
+|white|	#ffffff|	rgb(255, 255, 255)|	hsl(0, 100%, 100%)|
+|maroon|	#800000	|rgb(128, 0, 0)|	hsl(0, 100%, 25%)|
+|red|	#ff0000|	rgb(255, 0, 0)|	hsl(0, 100%, 50%)|
+|purple|	#800080|	rgb(128, 0, 128)|	hsl(300, 100%, 25%)|
+|fuchsia|	#ff00ff|	rgb(255, 0, 255)|	hsl(300, 100%, 50%)|
+|green|	#008000	|rgb(0, 128, 0)|	hsl(120, 100%, 25%)|
+|olive|	#808000|	rgb(128, 128, 0)|	hsl(60, 100%, 25%)|
+|lime|	#00ff00|	rgb(0, 255, 0)|	hsl(120, 100%, 50%)|
+|yellow|	#ffff00|	rgb(255, 255, 0)|	hsl(60, 100%, 50%)|
+|navy|	#000080|	rgb(0, 0, 128)|	hsl(240, 100%, 25%)|
+|blue|	#0000ff|	rgb(0, 0, 255)|	hsl(240, 100%, 50%)|
+|teal|	#008080|	rgb(0, 128, 128)|	hsl(180, 100%, 25%)|
+|aqua|	#00ffff|	rgb(0, 255, 255)|	hsl(180, 100%, 50%)|
+
+
+- ie `red`, `green`, `blue`.
+
+```css
+.task {
+  background: maroon;
+}
+.count {
+  background: yellow;
+}
+```
+
 ### Hexadecimal colors
-### The millions of Hexadecimal colors
+
+- The most popular of the 4 options
+- `#` followed by 3 or 6 characters.
+- The chars are 0-9, a-f and A-F.
+- They form 3 columns that map to R, G and B
+<img width="287" alt="Screenshot 2023-05-27 at 09 33 30" src="https://github.com/SandyRodger/LS202_html_and_css/assets/78854926/65930bc5-1204-43e6-ae7e-29e9cfd18a68">
+- 0 is black, f is white.
+
+#### The millions of Hexadecimal colors
+
+- There are more than 16.7 million hexadecimal colours:
+  - 16 options for each characer.
+  - Paired characters have 256 options. 16 squared.
+  - Three pairs with 256 options is 16.7 million. 256 * 256 * 256 or 256 cubed.
+
+```css
+.task {
+  background: #800000;
+}
+.count {
+  background: #ff0;
+}
+```
+
+- It can be useful to use a service like [Adobe Color](https://color.adobe.com/create/color-wheel) to find the right color and then note down its RBG hex number.
+
 ### RGB and RGBa colors
+
+- Use the `rgb()` function, which takes 3 comma seperated values of 0 - 255.
+- 0 is black, 255 pure white.
+
+```css
+.task {
+  background: rgb(128, 0, 0);
+}
+.count {
+  background: rgb(255, 255, 0);
+}
+```
+- the `rgba()` function can also be used to add a fourth value for transparency. This fourth value is between 0.0 and 1, where 0 is fully transparent.
+
+```css
+.task {
+  background: rgba(128, 0, 0, .25);
+}
+.count {
+  background: rgba(255, 255, 0, 1);
+}
+```
+
 ### HSL & HSLa colors
+
+- Hue, saturation, light.
+- `hsl()` function.
+- Hue is a number 0 - 360 representing the degree on the colour wheel.
+- Saturation is 0 - 100 % on a grey-scale.
+- Lightness is 0 - 100% for white to black.
+
+```css
+.task {
+  background: hsl(0, 100%, 25%);
+}
+.count {
+  background: hsl(60, 100%, 50%);
+}
+```
+- HSL colours can also include transparency with the `hsla()` function:
+```css
+.task {
+  background: hsla(0, 100%, 25%, .25);
+}
+.count {
+  background: hsla(60, 100%, 50%, 1);
+}
+```
+- hsl is relatively new and so less commonly used.
+
 ### Lengths
+
+- Absolute and relative.
+
 ### Absolute lengths
+
+- Use physical measurements (ie inches, centimeters). Most popularly pixels: `px`.
+
 ### Pixels
+
+- 1/96th inch.
+- Slight variation between high-density and low-density viewing devices.
+- Viewing devices are changing fast so pixels aren't as universal as they once were. But they are still the 'old faithful' of measurement.
+
 ### Relative Lengths
+
+- rely on the measurement of other elements.
+
 ### Percentages
+
+- Will be the % of its parent element:
+
+```css
+.col {
+  width: 50%;
+}
+```
+
 ### Em
+
+- 1 em is the element's font-size. 
+- So you might set the width of an element to `5em`, which would be 5 times the size of the font:
+
+```css
+.banner {
+  font-size: 14px;
+  width: 5em;
+}
+```
+- If the element has no explicit font size, the reader will look up the parent-chain until a parent element is found with an explicit font size.
+
 ## [Summary](https://learn.shayhowe.com/html-css/getting-to-know-css/#summary)
 
+- How style-sheets cascade from top to bottom of a file.
+- What specificity is and how to calculate it.
+- Combining selectors to target specific elements/groups of elements.
+- Using multiple classes on a single element to layer different stlyes of modular code.
+- Different colour values in CSS.
+- Different length values in CSS.
