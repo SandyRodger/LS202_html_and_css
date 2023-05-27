@@ -209,7 +209,7 @@ or
 - 2 spaces after each open tag.
 - Self-closing tags don't indent. Also commonly `head` and `body`.
 
-## [Classes, IDs and Names](https://launchschool.com/lessons/4495fbf7/assignments/0941b604_
+## [Classes, IDs and Names](https://launchschool.com/lessons/4495fbf7/assignments/0941b604_)
 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
