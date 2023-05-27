@@ -156,6 +156,7 @@
 - Tag types:
   - Opening tag: `<p>`
   - Closing tag </p>  # this isn't rendering properly, but it's the closing `p` tag
+    - AKA 'self-closing element', 'self-contained element', 'empty element', 'void element'. 
   - Self-closing tag `<br>` (most tags are not self closing).
 - HTML elements will always have the first 2, or the 3rd.
 - Terminology can be mixed up for this. We can talk about `p` as the tag or `<p>` as the tag. We may also say `p` element instead of `<p> ... </p>` element.
@@ -171,6 +172,44 @@ or
 - Do the rest of the tutorial if you feel like you want to know more HTML / CSS.
 
 ## [Creating a HTML skeleton](https://launchschool.com/lessons/4495fbf7/assignments/a52de9d4)
+
+- like the `new_meal` template on cal-cou, you don't want to repeatedly type out the template of a HTML file. 
+- This is your 'HTML skeleton' or 'HTML Scaffold'
+
+### Creating the HTML Skeleton
+
+- It could look like this:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+- There are 3 ways to have a skeleton on hand:
+  - save it as a `skeleton.html` file.
+  - Define a "snippet" in your editor with the code, to be inserted when you need it.
+  - Create a personal "Gist" that contains the code and copy/paste it from there.
+- The skeleton includes:
+  - `<!DOCTYPE html>`: This is the **Document Type Definition** (aka **DTD** or **DOCTYPE**). Officially this isn't part of the HTML and isnt a tag or element, even though it looks like one. It just tells the browser what kind of markup to expect, ie `XML`. You can lower-case this, although twasen't ever so, this is to do with variation in previous HTML versions.
+  - The `html` element encloses the whole html document. The `lang="en" attribute tells the browser that the web-page uses English. All other content and meta-data must be between these tags.
+  - The `head` element wraps the document header, which consists of elements that provide additional (or meta) information to the browser. `title` gives the page a title. `<meta charset="utf-8">` tells the browser to expect UTF-8 encoding. Most browsers display the title in the title bar or tab, so be sure to write a title.
+  - `meta` tags are self-closing. To close a self-closing tag is seen as incorrect by the W3C HTML Validator.
+  - The 'body' area of the code is the content of the page.
+  - Technically a HTML file requires all 4 of these things, but in practice they can each be ommitted. A browser will often fill in the gaps.
+
+#### Indentation
+
+- 2 spaces after each open tag.
+- Self-closing tags don't indent. Also commonly `head` and `body`.
+
+## [Classes, IDs and Names](https://launchschool.com/lessons/4495fbf7/assignments/0941b604_
 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
