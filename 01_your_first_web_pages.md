@@ -373,7 +373,7 @@ Answer: Correct: because it would still make sense if we extracted all of this a
 - no. Address is for web-addresses, block-quote doesn't fit because the section contains information other than the quote.
     
 Answer: `<blockquote>` should be used for extended quotes like this, but `<article>` is also appropriate. Perhaps the latter wrapped in the former would be best:
-    ```html
+```html
     <article>
   <blockquote>
     <h1>Lincoln's Gettysburg Address</h1>
@@ -382,9 +382,9 @@ Answer: `<blockquote>` should be used for extended quotes like this, but `<artic
     <p>But, in a larger sense, we can not dedicate...</p>
   </blockquote>
 </article>
-    ```
+```
     
-4. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+4. Given the following HTML, would `<section>`, `<aside>`, `<article>`, or `<div>` be the most appropriate element for the tag shown as `<sometag>`?
 
 - `<div>`
     
@@ -401,8 +401,24 @@ Take-away:
 - Avoid the non-semantic tags, try to use semantic tags propertly
 
 ## [Walkthrough Project: A Simple Web Page](https://launchschool.com/lessons/4495fbf7/assignments/ea30dd31)
+
+It should look like this:
+    
+<img width="609" alt="Screenshot 2023-05-30 at 10 24 30" src="https://github.com/SandyRodger/LS202_html_and_css/assets/78854926/337c615d-a718-405d-be18-ac8eee05ca25">
+
+- Steps:
+    - Adding a title.
+    - Adding content.
+    - Add paragraph-based content
+    - Add a heading.
+    - Formatting some text.
+    - Adding a hyper-link.
+    - Using the W3C HTML Validator.
+
+## [Walkthrough : Adding style to your web-page](https://launchschool.com/lessons/4495fbf7/assignments/0a979687)
     
 - 
+    
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
