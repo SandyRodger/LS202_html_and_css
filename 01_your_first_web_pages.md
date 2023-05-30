@@ -211,14 +211,125 @@ or
 
 ## [Classes, IDs and Names](https://launchschool.com/lessons/4495fbf7/assignments/0941b604_)
 
+- [Shay Howe section on this](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#working-with-selectors)
+- There are 3 ways to identify elements:
+  - Class
+  - ID
+  - Name (only for some elements)
+
+### Classes
+
+- This is for elements you want to style consistently. The example below is for 'teaching assistants'.
+
+```html
+<table>
+  <tbody>
+    <tr class="teaching-assistant">
+      <td>Elizabeth</td>
+      <td>JS230</td>
+    </tr>
+
+    <tr>
+      <td>Nancy</td>
+      <td>RB101</td>
+    </tr>
+
+    <tr>
+      <td>Joe</td>
+      <td>RB120</td>
+    </tr>
+
+    <tr class="teaching-assistant">
+      <td>Pete</td>
+      <td>JS225</td>
+    </tr>
+
+    <tr>
+      <td>Kim</td>
+      <td>LS202</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```css
+tr {
+  background-color: lime;
+  font-size: 200%;
+}
+
+.teaching-assistant {
+  background-color: yellow;
+}
+```
+
+<img width="202" alt="Screenshot 2023-05-30 at 08 36 18" src="https://github.com/SandyRodger/LS202_html_and_css/assets/78854926/d35fbdc7-23ab-4157-9488-52664e05e681">
+
+Overview:
+- `class` attributes assign class(es) to an element.
+- No limit to elements assigned to a class.
+- An element can belong to multiple classes. List them seperated by a space: `class="executive management full-time"`.
+- Use semantic class names, ie 'teaching assistant' rather than 'yellow background'.
+- Use css selectors (`.classname`) to select elements by class.
+- Class selectors have lower specificity than ID selsctors, but higher than Tag Name selectors (so the order is ID, Class, Name). [More here](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#calculating-specificity)
+
+### IDs
+
+- Is a unique string attached to a single element:
+
+```html
+<h1>This is a plain h1 heading</h1>
+<h1 id="headline">This is my headline</h1>
+```
+
+```css
+#headline {
+  color: red;
+  font-size: 48px;
+}
+```
+
+Overview:
+- Use `id` attribute to assign an ID to an element.
+- Each ID on a page should be unique.
+- Each element can have 1 or 0.
+- Use semantic id names, like `headline`, rather than `big font`.
+- Use CSS ID selectors (`#idname`) to identify elements by ID, eg `#headline`.
+- ID selectors have higher specificity thatn class selectors.
+- Browsers won't warn you about ID duplication, so be careful.
+
+### Names
+
+- We won't use this until much later.
+- `name` attributes tie form elements to data on the server.
+- It's not really for styling.
+- You can use `[name="field-name"]` to select elements, but you should rather use a class or ID selector instead.
+- When you submit a form the browser sends the form data to the server using name/value pairs, taking the name from the associated `name` attribute.
+
+```html
+<form method="get" action="#">
+  <label for="first-name-field">First name:</label>
+  <input type="text" name="first-name" id="first-name-field">
+
+  <label for="last-name-field">Last name:</label>
+  <input type="text" name="last-name" id="last-name-field">
+
+  <input type="submit" value="Search">
+</form>
+```
+
+- For this the browser sends a query string which looks like this: 
+
+``` first-name=Joe&last-name=Jones ```
+
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
-|2	Introduction|	22/5/22 |||50%|
-|3	Install Software|	22/5/22 | ||50%|
-|4	Getting Started|22/5/22 | ||50%|
-|5	Creating an HTML Skeleton|27/5/22 	| ||%|
-|6	Classes, IDs, and Names|		| ||%|
+|2	Introduction|	22/5/23 |||50%|
+|3	Install Software|	22/5/23| ||50%|
+|4	Getting Started|22/5/23 | ||50%|
+|5	Creating an HTML Skeleton|27/5/23 	| ||%|
+|6	Classes, IDs, and Names|30/5/23		| ||%|
 |7	Practice Problems: Semantics|		| ||%|
 |8	Walkthrough Project: A Simple Web Page|	| ||%|
 |9	Walkthrough Project: Adding Style to Your Web Page|		| ||%|
