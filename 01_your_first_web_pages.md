@@ -354,15 +354,55 @@ Overview:
 - Semantic HTML: Using HTML to show the structure and purpose of a document, not it's presentation.
 - [Here](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf) is a flow-chart to help see which tags should be used.
 
-1. 
-Semantic: <article>	 <aside> <div> <footer>	<h3>	<header>	<section>  <span>	
-Not semantic:  <strong> <b>
+1. Which of these tags are semantic, and which are not?
+
+Semantic: `<article>`	 `<aside>` `<div>` `<footer>`	`<h3>`	`<header>`	`<section>`  `<span>`	
+  
+Not semantic:  `<strong>` `<b>`
   
 Answer: `<div>` and `<span>` are not semantic, the rest are.
   
-2.
-  <section>, <aside>, <article>, or <div>
+2. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+  
+  <article>
+    
+Answer: Correct: because it would still make sense if we extracted all of this and put it in another context. It is self-contained and re-usable.
+    
+3. Given the HTML from question 2, would it be appropriate to replace <sometag> with <address> or <blockquote>? If so, which one?
 
+- no. Address is for web-addresses, block-quote doesn't fit because the section contains information other than the quote.
+    
+Answer: `<blockquote>` should be used for extended quotes like this, but `<article>` is also appropriate. Perhaps the latter wrapped in the former would be best:
+    ```html
+    <article>
+  <blockquote>
+    <h1>Lincoln's Gettysburg Address</h1>
+    <p>Four score and seven years ago ...</p>
+    <p>Now we are engaged in a great civil war...</p>
+    <p>But, in a larger sense, we can not dedicate...</p>
+  </blockquote>
+</article>
+    ```
+    
+4. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+
+- `<div>`
+    
+Answer: `<section>` because the text seems to be part of a larger body of work. Not an `<aside>` since it seems to be part of the main flow of text.
+
+5. Given the following HTML, would `<aside>`, `<section>`, `<blockquote>`, or `<div>` be the most appropriate element for the tag shown as `<sometag>`?
+
+- `<aside>`
+
+    Answer: Correct.
+    
+Take-away:
+    
+- Avoid the non-semantic tags, try to use semantic tags propertly
+
+## [Walkthrough Project: A Simple Web Page](https://launchschool.com/lessons/4495fbf7/assignments/ea30dd31)
+    
+- 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
