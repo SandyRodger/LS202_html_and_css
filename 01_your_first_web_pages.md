@@ -417,7 +417,13 @@ It should look like this:
 
 ## [Walkthrough : Adding style to your web-page](https://launchschool.com/lessons/4495fbf7/assignments/0a979687)
     
-- 
+Target:
+    
+<img width="600" alt="Screenshot 2023-05-30 at 11 50 16" src="https://github.com/SandyRodger/LS202_html_and_css/assets/78854926/6e4c01c1-b377-4c36-841c-22fc36036d8d">
+
+- Steps:
+    - Applying CSS.
+      - Inline: Using the `style` attribute on individual tags.
     
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
@@ -428,8 +434,8 @@ It should look like this:
 |5	Creating an HTML Skeleton|27/5/23 	| ||%|
 |6	Classes, IDs, and Names|30/5/23		| ||%|
 |7	Practice Problems: Semantics|	30/5/23		| ||%|
-|8	Walkthrough Project: A Simple Web Page|	| ||%|
-|9	Walkthrough Project: Adding Style to Your Web Page|		| ||%|
+|8	Walkthrough Project: A Simple Web Page|30/5/23		| ||%|
+|9	Walkthrough Project: Adding Style to Your Web Page|	30/5/23		| ||%|
 |10	Guided Project: A Personal Profile|		| ||%|
 |11	Practice Problems: Text Formatting|		| ||%|
 |12	On Your Own: Creating a Simple Page	|	| ||%|
