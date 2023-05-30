@@ -93,7 +93,6 @@
 
 - It is a good list of the topics and terminology you should know well.
 
-
 ## [Install Software](https://launchschool.com/lessons/4495fbf7/assignments/70abbf75)
 
 
@@ -318,9 +317,51 @@ Overview:
 </form>
 ```
 
-- For this the browser sends a query string which looks like this: 
+- For this the browser sends a query string which looks like this (note the `id` attribute is not sent: 
 
 ``` first-name=Joe&last-name=Jones ```
+
+#### For attributes
+
+- More on this later, but...
+- There is a 'for' attribute, which references an ID.
+- It's accepted practice to use both `name` and `id` on form elements and have the same value for both:
+```html
+<form method="get" action="#">
+  <label for="first-name">First name:</label>
+  <input type="text" name="first-name" id="first-name">
+
+  <label for="last-name">Last name:</label>
+  <input type="text" name="last-name" id="last-name">
+
+  <input type="submit" value="Search">
+</form>
+```
+
+Overview:
+
+- Use the `name` attribute to assign a name to a form-data element that the browser can then take to the server as a value.
+- Not all tags can take a `name` attribute.
+- ALWAYS use a `name` attribute on form elements tha accept them.
+- Each name in a form should be unique, except for:
+  - radio buttons that belong to a single group.
+  - checkboxes that belong to a single group.
+- Use descriptive names, not semantic. So `name="last-name"`, rather than `name="input-field"`.
+- Avoid trying to select elements in CSS with the `name`  attribute.
+
+## [Practice Problems: Semantics](https://launchschool.com/lessons/4495fbf7/assignments/0d4ac29e)
+
+- Semantic HTML: Using HTML to show the structure and purpose of a document, not it's presentation.
+- [Here](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf) is a flow-chart to help see which tags should be used.
+
+1. 
+Semantic: <article>	 <aside> <div> <footer>	<h3>	<header>	<section>  <span>	
+Not semantic:  <strong> <b>
+  
+Answer: `<div>` and `<span>` are not semantic, the rest are.
+  
+2.
+  <section>, <aside>, <article>, or <div>
 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
@@ -330,7 +371,7 @@ Overview:
 |4	Getting Started|22/5/23 | ||50%|
 |5	Creating an HTML Skeleton|27/5/23 	| ||%|
 |6	Classes, IDs, and Names|30/5/23		| ||%|
-|7	Practice Problems: Semantics|		| ||%|
+|7	Practice Problems: Semantics|	30/5/23		| ||%|
 |8	Walkthrough Project: A Simple Web Page|	| ||%|
 |9	Walkthrough Project: Adding Style to Your Web Page|		| ||%|
 |10	Guided Project: A Personal Profile|		| ||%|
