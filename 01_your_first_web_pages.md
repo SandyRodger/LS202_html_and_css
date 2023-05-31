@@ -583,6 +583,8 @@ body {
 
 14. Why is [this](file:///Users/sandyboy/Desktop/LS202_html_and_css/practice_problems_text_formatting/14.html) yellow even without th yellow styling? 
 
+## [On your own: creating a simple page](https://launchschool.com/lessons/4495fbf7/assignments/a5c5771f)
+
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
@@ -595,7 +597,7 @@ body {
 |8	Walkthrough Project: A Simple Web Page|30/5/23		| ||%|
 |9	Walkthrough Project: Adding Style to Your Web Page|	31/5/23		| ||%|
 |10	Guided Project: A Personal Profile|	31/5/23			| ||%|
-|11	Practice Problems: Text Formatting|		| ||%|
+|11	Practice Problems: Text Formatting|	31/5/23	| ||%|
 |12	On Your Own: Creating a Simple Page	|	| ||%|
 |13	Practice Problems: CSS Selectors|		| ||%|
 |14	CSS Diner	|	| ||%|
