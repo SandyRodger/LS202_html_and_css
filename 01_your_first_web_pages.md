@@ -581,9 +581,19 @@ body {
 
 2. Change the font family for the page from the previous problem to a sans-serif font.
 
-14. Why is [this](file:///Users/sandyboy/Desktop/LS202_html_and_css/practice_problems_text_formatting/14.html) yellow even without th yellow styling? 
+14. Why is [this](file:///Users/sandyboy/Desktop/LS202_html_and_css/practice_problems_text_formatting/14.html) yellow even without the yellow styling? 
 
 ## [On your own: creating a simple page](https://launchschool.com/lessons/4495fbf7/assignments/a5c5771f)
+
+## [Practice Problems: CSS Selectors]()
+## [CSS Diner	](https://launchschool.com/lessons/4495fbf7/assignments/8b986401https://launchschool.com/lessons/4495fbf7/assignments/8e39567e)
+## [Using the Chrome Inspector](https://launchschool.com/lessons/4495fbf7/assignments/538a0597)
+### [Getting started with viewing and changing the DOM](https://developer.chrome.com/docs/devtools/dom/)
+### [View the properties of DOM objects](https://developer.chrome.com/docs/devtools/dom/properties/)
+### [View and change CSS](https://developer.chrome.com/docs/devtools/css/)
+## [HTML and CSS Style Guide]
+## [Summary]
+## [Quiz 1]
 
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
@@ -598,10 +608,10 @@ body {
 |9	Walkthrough Project: Adding Style to Your Web Page|	31/5/23		| ||%|
 |10	Guided Project: A Personal Profile|	31/5/23			| ||%|
 |11	Practice Problems: Text Formatting|	31/5/23	| ||%|
-|12	On Your Own: Creating a Simple Page	|	| ||%|
-|13	Practice Problems: CSS Selectors|		| ||%|
-|14	CSS Diner	|	| ||%|
-|15	Using the Chrome Inspector	|	| ||%|
+|12	On Your Own: Creating a Simple Page	|	31/5/23	| ||%|
+|13	Practice Problems: CSS Selectors|		31/5/23	| ||%|
+|14	CSS Diner	|	31/5/23	| ||%|
+|15	Using the Chrome Inspector	|	31/5/23	| ||%|
 |16	HTML and CSS Style Guide|		| ||%|
 |17	Summary|		| ||%|
 |18	Quiz 1|	| ||%|
