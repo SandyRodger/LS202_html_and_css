@@ -37,3 +37,18 @@ What we talked about:
  - Getting things done - book by David Allen
  - todobot.ai and what comes next
  - [atoms to bits interfaces](https://www.accenture.com/gb-en/insights/technology/technology-trends-2023)
+
+## 30.5.23, 12:15
+
+- LS 202: Summary so far.
+- Whoop fitness tracker
+- Todobot: I can't chat to the bot
+
+What we talked about:
+
+- Different CSS games
+  - [the frog game](https://flexboxfroggy.com)
+  - The [setting a table game](https://flukeout.github.io)
+- Maybe doing RB175 and LS202 simultaneously.
+- The benefits of doing a project while studying.
+  - "Don't teach screwdrivers when the student has never seen a screw"
