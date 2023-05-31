@@ -362,13 +362,13 @@ Not semantic:  `<strong>` `<b>`
   
 Answer: `<div>` and `<span>` are not semantic, the rest are.
   
-2. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+2. Given the following HTML, would `<section>`, `<aside>`, `<article>`, or `<div>` be the most appropriate element for the tag shown as `<sometag>`?
   
-  <article>
+  `<article>`
     
 Answer: Correct: because it would still make sense if we extracted all of this and put it in another context. It is self-contained and re-usable.
     
-3. Given the HTML from question 2, would it be appropriate to replace <sometag> with <address> or <blockquote>? If so, which one?
+3. Given the HTML from question 2, would it be appropriate to replace `<sometag>` with `<address>` or `<blockquote>`? If so, which one?
 
 - no. Address is for web-addresses, block-quote doesn't fit because the section contains information other than the quote.
     
@@ -423,8 +423,166 @@ Target:
 
 - Steps:
     - Applying CSS.
-      - Inline: Using the `style` attribute on individual tags.
+      - Inline: Using the `style` attribute on individual HTML tags.
+      - Internal: Using the `style` element to store all of the CSS in one place in the file.
+      - External: CSS stored in a seperate file.
+
+### Inline CSS
+
+- Adding a 'style' attribute to an element, like this:
+
+```html
+<p>
+  Welcome to my website! It's a work in progress as I learn
+  <strong style="color: blue; text-decoration: underline;">HTML</strong>
+  and <strong>CSS</strong> from a <em>terrific</em> class I'm taking at <a href="https://launchschool.com">Launch School</a>. I'm learning a lot! Why don't you join me?
+</p>
+```
+- The problem is applying style attributes to lots of different elements is tedious and hard to maintain. 
+- Add more style attributes by adding them to the string with a colon to seperate them.
+- We seperate property name/value pairs with a semi-colon. A following white-space is recommended for clarity.
+
+### Internal CSS
+
+- Better to list your style information in a `style` element, inside the `head` element. This is easier and puts everything in one place. 
+- It's also the mode used by this course, because it puts the HTML and CSS together in one project.
+- The following exercise results in this file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome!</title>
+    <meta charset="utf-8">
+    <style>
+      strong {
+      color: blue;
+      text-decoration: underline;
+      }
+
+      h1 {
+        color: orange;
+        text-align: center;
+      }
+
+      em {
+        color: red;
+        font-style: italic;
+      }
+
+      p {
+        font-size: 24px; 
+      }
+
+      body {
+        background-color: #ffffe0;
+      }
+
+      .more-text {
+        color: gray;
+      }
+
+      #final-paragraph {
+        text-decoration: underline;
+      }
+
+    </style>
+    </head>
+  <body>
+    <h1>Hello Internet!</h1>
     
+    <p>
+      Welcome to my website! It's a work in progress as I learn
+      <strong>HTML</strong> and <strong>CSS</strong> from a <em>terrific</em> class
+      I'm taking at <a href="https://launchschool.com">Launch School</a>. I'm
+      learning a lot! Why don't you join me?
+    </p>
+  
+    <p class="more-text">
+      There's not a lot of material on this page as I'm playing around with HTML &amp;
+      CSS. When I'm done, these last two paragraphs will take on a lighter color
+      than the first - the "class" attribute on the two &lt;p&gt; tags and a bit of CSS
+      will help accomplish that.
+    </p>
+    
+    <p class="more-text" id="final-paragraph">
+      This is the final paragraph. It also uses the `class` attribute as well as an
+      `id` attribute. We'll use some CSS and the `id` attribute to underline the
+      entire paragraph.
+    </p>
+    
+  </body>
+</html>
+```
+
+### External CSS
+
+- The CSS goes in a seperate file and is referenced with a `<link>` tag in the `<head>` element.
+- You can have multiple links to multiple CSS files.
+- This is best-practice.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Welcome!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="my.css">
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+- The CSS file looks like this:
+
+```css
+strong {
+color: blue;
+text-decoration: underline;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+em {
+  color: red;
+  font-style: italic;
+}
+
+p {
+  font-size: 24px; 
+}
+
+body {
+  background-color: #ffffe0;
+}
+
+.more-text {
+  color: gray;
+}
+
+#final-paragraph {
+  text-decoration: underline;
+}
+```
+
+## [Guided project: A Personal Profile](https://launchschool.com/lessons/4495fbf7/assignments/23904997)
+
+- [A guide to web fonts](http://web.mit.edu/jmorzins/www/fonts.html)
+
+## [Practice Problems: Text Formatting](https://launchschool.com/lessons/4495fbf7/assignments/ea264d0e)
+
+1. Create an HTML page with 
+  - a single paragraph of text
+  -  Write CSS to set the font size for most elements on the page to 20px (you may ignore headers, subscripts, and other items that often have a different size).
+
+2. Change the font family for the page from the previous problem to a sans-serif font.
+
+14. Why is [this](file:///Users/sandyboy/Desktop/LS202_html_and_css/practice_problems_text_formatting/14.html) yellow even without th yellow styling? 
+
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
@@ -435,8 +593,8 @@ Target:
 |6	Classes, IDs, and Names|30/5/23		| ||%|
 |7	Practice Problems: Semantics|	30/5/23		| ||%|
 |8	Walkthrough Project: A Simple Web Page|30/5/23		| ||%|
-|9	Walkthrough Project: Adding Style to Your Web Page|	30/5/23		| ||%|
-|10	Guided Project: A Personal Profile|		| ||%|
+|9	Walkthrough Project: Adding Style to Your Web Page|	31/5/23		| ||%|
+|10	Guided Project: A Personal Profile|	31/5/23			| ||%|
 |11	Practice Problems: Text Formatting|		| ||%|
 |12	On Your Own: Creating a Simple Page	|	| ||%|
 |13	Practice Problems: CSS Selectors|		| ||%|
