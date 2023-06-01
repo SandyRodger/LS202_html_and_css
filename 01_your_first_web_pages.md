@@ -607,7 +607,220 @@ body {
 
 ### [Shay Howe Chapter 12](http://learn.shayhowe.com/html-css/writing-your-best-code/)
 
-## [Summary]
+- Launch School **HTML** Style tips:
+  - Don't cram more than 1 (LS says more tha 2, i guess this is an error?) elements on a single line:
+```html
+<!-- Legal but hard to read -->
+<nav><ul><li>Home</li><li>Sign Up</li><li>Log In</li><li>Log Out</li></ul></nav>
+
+<!-- Good -->
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>Sign Up</li>
+    <li>Log In</li>
+    <li>Log Out</li>
+  </ul>
+</nav>
+
+<!-- Acceptable, but a bit hard to read -->
+<li><a href="home.html">Home</a></li>
+<a href="home.html"><img src="home.gif"></a>
+```
+
+  - Indent nested tags consistently: 2 spaces, 4 spaces or hard tabs:
+```html
+<!-- Legal but hard to read and maintain -->
+  <section>
+<blockquote>
+the quote
+            </blockquote>
+</section>
+
+<!-- Easier to read, but doesn't reveal structure -->
+<section>
+<blockquote>
+the quote
+</blockquote>
+</section>
+
+<!-- Good -->
+<section>
+  <blockquote>
+    the quote
+  </blockquote>
+</section>
+```
+
+  - Don't indent the `<html>` tag:
+```html
+<!-- Legal, but non-standard -->
+<!DOCTYPE html>
+  <html lang="en-US">
+    <!-- rest of HTML -->
+  </html>
+
+<!-- Okay -->
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- rest of HTML -->
+</html>
+```
+  - Don't close self-closing tags:
+```html
+<!-- Good -->
+<br>
+<img src="picture.jpg">
+
+<!-- Bad -->
+<br />
+<img src="picture.jpg" />
+```
+
+### **CSS**
+
+- Don't put more than one property on the same line:
+```css
+/* Legal but hard to read and maintain */
+p {
+  background-color: yellow; border: 3px dashed #888; color: red;
+}
+
+/* Okay */
+p {
+  background-color: yellow;
+  border: 3px dashed #888;
+  color: red;
+}
+```
+- ... with the exception of 'fallbacks' (back-up values in case older browsers need them):
+
+```html
+p {
+  background-color: yellow;
+  color: red;
+  width: 50%; width: 50vw; /* fallback to 50% if 50vw not recognized */
+}
+```
+
+- Indent (the same as HTML):
+```css
+/* Legal but hard to read */
+p {
+background-color: yellow;
+              border: 3px dashed #888;
+        color: red;
+}
+
+/* Okay */
+p {
+  background-color: yellow;
+  border: 3px dashed #888;
+  color: red;
+}
+```
+
+- Put the opening `{` on the same line as the selector and the closing `}` on a line by itself OR the end of the last property:
+```css
+/* Legal but hard to read */
+p
+    {
+  color: red;}
+
+/* Okay */
+p {
+  color: red;
+}
+
+/* Also okay */
+p
+{
+  color: red;
+}
+
+/* Also okay */
+p { color: red; }
+
+/* Also okay, but unusual */
+p {
+  color: red;
+  width: 500px; }
+```
+- No space before semi-colon
+```css
+p {
+    margin: 25px;
+    margin-right: 10px;
+    /* Partial override: `margin: 25px 10px 25px 25px;` */
+}
+
+blockquote {
+    margin-right: 10px;
+    margin: 25px;
+    /* Complete override: `margin: 25px;` */
+}
+```
+
+- The order of properties doesn't matter, but be aware that later elements can override earlier ones:
+```css
+p {
+    margin: 25px;
+    margin-right: 10px;
+    /* Partial override: `margin: 25px 10px 25px 25px;` */
+}
+
+blockquote {
+    margin-right: 10px;
+    margin: 25px;
+    /* Complete override: `margin: 25px;` */
+}
+```
+- Group your selectors by function. Ie. all the header-specific selectors together. Linters like stylelint can save you time and debugging here.
+- Avoid using tag selectors and ID selectors as much as possible.
+- Tags have the lowest specificity and IDs the highest, so in a competition between these two my heading selectors:
+```html
+<h1 class="heading" id="my-heading">Hello</h1>
+```
+and
+```css
+h1 { color: red; }
+#my-heading { color: blue; }
+.heading { color: green; }
+```
+the ID `#my-heading` selector will win. Using class selectors as muich as possible avoids this confusion.
+
+## [Summary](https://launchschool.com/lessons/4495fbf7/assignments/042188f5)
+
+**HTML**
+
+- HyperText Markup Language
+- Uses markup to organize your content and give it semantic meaning.
+- Elements are the basic building blocks of HTML
+- We use tags in html to represent elements
+- Tags may have attributes that add details to the elements.
+- The DOCTYPE tells the browser what subset of HTML you are using.
+- All documents require a DOCTYPE.
+- All documents should have `html`, `head`, `title`, and `body` tags and should include a `meta` tag that defines the character set. The standard doesn't require this, but use them to stay safe.
+- HTML attributes `id`, `class` and `name` assign different kinds of identification information to HTML elements.
+- The `p`, `a`, `em`, `strong` and `h1`..`h6`b tags should be memorized.
+- HTML character entities and how to use them in place of the literal `<`, `>` and `&` characters.
+
+**CSS**
+
+- Cascading Style sheets
+- Tells your browset how to present content with spacing, colors, font srtkes, background images, placement and much more.
+- CSS properties have a name and value.
+- CSS rules have a selector that describes what elements to style and a list of zero or more properties that define how the browser should render them.
+  - tag, ie `h1`
+  - class, ie `.highlight`
+  - ID, ie. `#intro` (don't use them)
+  - You can concatenate them.
+- CSS has specificity and inheritance rules which control the cascade.
+- CSS font stacks provide a list of candidate fonts and an optional fallback font-family.
+- The difference between serif and sans-serif fonts.
+- Internal, external and inline CSS
+- How to set text, background colors, font families and font sizes.
+
 ## [Quiz 1]
 
 |  | Once | Twice | Thrice | Got it?
@@ -626,7 +839,7 @@ body {
 |12	On Your Own: Creating a Simple Page	|	31/5/23	| ||%|
 |13	Practice Problems: CSS Selectors|		31/5/23	| ||%|
 |14	CSS Diner	|	31/5/23	| ||%|
-|15	Using the Chrome Inspector	|	31/5/23	| ||%|
-|16	HTML and CSS Style Guide|		| ||%|
-|17	Summary|		| ||%|
+|15	Using the Chrome Inspector	|	1/6/23	| ||%|
+|16	HTML and CSS Style Guide|	1/6/23	| ||%|
+|17	Summary|	1/6/23	| ||%|
 |18	Quiz 1|	| ||%|
