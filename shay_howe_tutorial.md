@@ -825,3 +825,29 @@ p {                      /* => here is the 'type' selector, with a lower specifi
 - Using multiple classes on a single element to layer different stlyes of modular code.
 - Different colour values in CSS.
 - Different length values in CSS.
+
+# [Lesson 12 - writing your best code](http://learn.shayhowe.com/html-css/writing-your-best-code/)
+
+## [HTML Coding Practices](https://learn.shayhowe.com/html-css/writing-your-best-code/#html-coding-practices)
+### Write standards-compliant Mark-up
+### Make use of Semantic Elements
+### Use proper documentation structure
+### Keep the syntax Organised
+### Use practical ID & Class values
+### Use the alternative text Attribute on Images
+### Seperate content from Style
+### Avoid a case of "Divitis"
+### Continually refactor code
+## [CSS coding Practices](https://learn.shayhowe.com/html-css/writing-your-best-code/#css-coding-practices)
+### Organise code with comments
+### Write CSS Using multiple lines & spaces
+### Use proper class names
+### Build proficient selectors
+### Use specific classes when necessary
+### Use shorthand propertoes and values
+### Use shorthand Hexadecimal Color values
+### Drop Units from zero values
+### Group and align vendor prefixes
+### Modularize styles for reuse
+## [Additional resources and links](https://learn.shayhowe.com/html-css/writing-your-best-code/#additional-resources)
+
