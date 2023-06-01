@@ -823,6 +823,46 @@ the ID `#my-heading` selector will win. Using class selectors as muich as possib
 
 ## [Quiz 1]
 
+| Q | 1st attempt | 2nd Attempt | 3rd Attempt(24th March)
+| :---: | :---: | :---: | :---: |
+|1. |       ✔     |     
+|2. |       X |
+|3.  |       X     |    
+|4.  |       X
+|5.  |       ✔    |
+|6.  |        X    |
+|7.  |      ✔ |
+|8.   |       X     |  
+|9.   |       ✔     |  
+|10.  |       ✔     |   
+|11.  |       ✔     |      
+|12.  |       X     |     
+|13.   |       ✔     |     
+| 14. |       X |
+| 15.   |       X     |     
+| 16| X |
+| total: |      44%    |     
+
+Mistakes:
+
+2. `<img src="picture.prg">` is fine. But the `<!DOCTYPE HTML>` is a message for the browsr and not part of the HTML.
+3. Single quotes are not advised, but not wrong.
+4. The class attribute value misses its closing quotation mark.
+6. The DOCTYPE has to be the first thing in the document or the browser won't see it.
+8. ID attributes are appropriate for unique specific, identifiers on a page.
+12. The following is invalid because you can't use selectors with inline styles.
+```html
+<body>
+  <a href="https://example.com" style="a { color: green; }">Example</a>`
+</body>
+```
+14. `text-color` and `font'color` are not actually property names.
+15. The CSS in B lacks semi-colons.
+16. Frustratingly I found the right size (1.3rem), but googled its pixel equivalent and somehow got the wrong figure. The answer tells me i should have looked in the computed subtab of the inspector where 26px is listed as the font-size.
+
+ 
+## Overview
+
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Welcome| 18/5/23 |||50%|
@@ -842,4 +882,4 @@ the ID `#my-heading` selector will win. Using class selectors as muich as possib
 |15	Using the Chrome Inspector	|	1/6/23	| ||%|
 |16	HTML and CSS Style Guide|	1/6/23	| ||%|
 |17	Summary|	1/6/23	| ||%|
-|18	Quiz 1|	| ||%|
+|18	Quiz 1|1/6/23	| ||%|
