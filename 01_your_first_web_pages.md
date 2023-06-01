@@ -604,7 +604,8 @@ body {
 ## [HTML and CSS Style Guide](https://launchschool.com/lessons/4495fbf7/assignments/3ced4082)
 
 - This bit is all about making your code readable and maintainable.
-- Shay Howe has [a good bit](http://learn.shayhowe.com/html-css/writing-your-best-code/) about this...
+
+### [Shay Howe Chapter 12](http://learn.shayhowe.com/html-css/writing-your-best-code/)
 
 ## [Summary]
 ## [Quiz 1]
