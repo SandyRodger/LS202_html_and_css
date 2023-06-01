@@ -1186,7 +1186,7 @@ div {
 - It's more work, but great styling.
 - But they must be kept organized.
 - Group and indent vendor prefixes so that the property names stack vertically with their values.
-- In the following 'good code' example keeps the `backgroun` property aligned left and the `linear-gradient()` functions indented to keep their values vertically stacked. The `box-sizing` property is indented as necessary to keep the zbox-sizingz properties and values vertically stacked.
+- In the following 'good code' example keeps the `background` property aligned left and the `linear-gradient()` functions indented to keep their values vertically stacked. The `box-sizing` property is indented as necessary to keep the zbox-sizingz properties and values vertically stacked.
 - Bad code:
 ```css
 div {
@@ -1210,6 +1210,50 @@ background:         linear-gradient(#a1d3b0, #f6f1d3);
 }
 ```
 
+- Vendor prefixes: 
+  - When using vendor prefixes, include an unprefixed version of our property and value last, after any prefixed versions. 
+  - This ensures that browsers that support the unprefixed version wil render that style according to its placement within the cascade (top to bottom).
+  - The good news is browsers are moving away from using vendor prefixes.
+
 ### Modularize styles for reuse
+
+- CSS is designed to facilitate style reuse.
+- So styles assigned to a class should be modular and available to share across elements.
+- So a box presenting news could be called `news`, but would be better named `feat-box` because the styling of that news might be applicable to another box on the website which is not containing news.
+- Bad code:
+```css
+.news {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.events {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+```
+
+- Good news
+
+```css
+.feat-box {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+```
+
 ## [Additional resources and links](https://learn.shayhowe.com/html-css/writing-your-best-code/#additional-resources)
+## [Summary](https://learn.shayhowe.com/html-css/writing-your-best-code/#summary)
+
+- HTML and CSS should always:
+  - be well organized for:
+    - readability
+    - editing
+    - maintanability
+  - Be modular/flexible for reusing:
+    - code
+    - patterns
+  - Look as if one person wrote it.
 
