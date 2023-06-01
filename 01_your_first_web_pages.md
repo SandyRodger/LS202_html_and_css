@@ -588,18 +588,24 @@ body {
 ## Practice Problems: CSS Selectors
 ## [CSS Diner	](https://launchschool.com/lessons/4495fbf7/assignments/8b986401https://launchschool.com/lessons/4495fbf7/assignments/8e39567e)
 ## [Using the Chrome Inspector](https://launchschool.com/lessons/4495fbf7/assignments/538a0597)
-### [Getting started with viewing and changing the DOM](https://developer.chrome.com/docs/devtools/dom/)
 
--  [Difference between DOM and HTML](https://developer.chrome.com/docs/devtools/dom/#appendix)
-  -  "Document Object Model"
-  -  Your browser parses HTML into a tree of objects
-  -  This tree of objects/nodes representing the page is the DOM.
-  -  If you (or often javascript) change something on the DOM, the DOM is now different to the HTML.
-  -  In other words the DOM is current page-content and the HTML is original page-content.
+### Google Inspector tutorials:
+- [Getting started with viewing and changing the DOM](https://developer.chrome.com/docs/devtools/dom/)
+  -  [Difference between DOM and HTML](https://developer.chrome.com/docs/devtools/dom/#appendix)
+    -  "Document Object Model"
+    -  Your browser parses HTML into a tree of objects
+    -  This tree of objects/nodes representing the page is the DOM.
+    -  If you (or often javascript) change something on the DOM, the DOM is now different to the HTML.
+    -  In other words the DOM is current page-content and the HTML is original page-content.
 
-### [View the properties of DOM objects](https://developer.chrome.com/docs/devtools/dom/properties/)
-### [View and change CSS](https://developer.chrome.com/docs/devtools/css/)
-## [HTML and CSS Style Guide]
+- [View the properties of DOM objects](https://developer.chrome.com/docs/devtools/dom/properties/)
+- [View and change CSS](https://developer.chrome.com/docs/devtools/css/)
+
+## [HTML and CSS Style Guide](https://launchschool.com/lessons/4495fbf7/assignments/3ced4082)
+
+- This bit is all about making your code readable and maintainable.
+- Shay Howe has [a good bit](http://learn.shayhowe.com/html-css/writing-your-best-code/) about this...
+
 ## [Summary]
 ## [Quiz 1]
 
