@@ -585,10 +585,18 @@ body {
 
 ## [On your own: creating a simple page](https://launchschool.com/lessons/4495fbf7/assignments/a5c5771f)
 
-## [Practice Problems: CSS Selectors]()
+## Practice Problems: CSS Selectors
 ## [CSS Diner	](https://launchschool.com/lessons/4495fbf7/assignments/8b986401https://launchschool.com/lessons/4495fbf7/assignments/8e39567e)
 ## [Using the Chrome Inspector](https://launchschool.com/lessons/4495fbf7/assignments/538a0597)
 ### [Getting started with viewing and changing the DOM](https://developer.chrome.com/docs/devtools/dom/)
+
+-  [Difference between DOM and HTML](https://developer.chrome.com/docs/devtools/dom/#appendix)
+  -  "Document Object Model"
+  -  Your browser parses HTML into a tree of objects
+  -  This tree of objects/nodes representing the page is the DOM.
+  -  If you (or often javascript) change something on the DOM, the DOM is now different to the HTML.
+  -  In other words the DOM is current page-content and the HTML is original page-content.
+
 ### [View the properties of DOM objects](https://developer.chrome.com/docs/devtools/dom/properties/)
 ### [View and change CSS](https://developer.chrome.com/docs/devtools/css/)
 ## [HTML and CSS Style Guide]
