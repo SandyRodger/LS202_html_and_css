@@ -829,25 +829,387 @@ p {                      /* => here is the 'type' selector, with a lower specifi
 # [Lesson 12 - writing your best code](http://learn.shayhowe.com/html-css/writing-your-best-code/)
 
 ## [HTML Coding Practices](https://learn.shayhowe.com/html-css/writing-your-best-code/#html-coding-practices)
+
+- A lot of these lessons apply to other coding languages. Like the bit about comments.
+
 ### Write standards-compliant Mark-up
+
+- HTML is a forgiving language. It will do it's best to render poorly written code.
+- BUT bad code is unpredictable. So be sure to 
+  - nest and close correctly.
+  - Use IDs and classes appropriately
+  - always validate your code.
+
+- Here are examples of the following mistakes:
+  - Using the `intro` ID attribute multiple times, when it should be unique.
+  - closing `<p>` and `<strong>` in the wrong order.
+  - Not closing the second `<p>` element.
+```html
+<p id="intro">New items on the menu today include <strong>caramel apple cider and breakfast crepes</p>.</strong>
+<p id="intro">The caramel apple cider is delicious.
+```
+  
+- It should be:
+
+```html
+<p class="intro">New items on the menu today include <strong>caramel apple cider and breakfast crepes</strong>.</p>
+<p class="intro">The caramel apple cider is delicious.</p>
+```
+
 ### Make use of Semantic Elements
+
+- HTML library has 100+ elements. So it's jard, but this is the back-bone of semantic HTML. 
+- Use the right ones and... 
+  - users will benefit in the long-term.
+  - The website will be more accessible.
+  - It will be easier to style.
+- Below the HTML doesn't use proper heading and paragraph elements. Instead it uses meaningless elements to style and group content.
+
+```html
+<span class="heading"><strong>Welcome Back</span></strong>
+<br><br>
+It has been a while. What have you been up to lately?
+<br><br>
+```
+
+- It should be:
+
+```html
+<h1>Welcome Back</h1>
+<p>It has been a while. What have you been up to lately?</p>
+```
+
 ### Use proper documentation structure
+
+- HTML is forgiving and will render without `<!DOCTYPE html>` or `<html>`, `<head>` and `<body>` elements. But some browsers will screw it up.
+- An example of this done badly is:
+```html
+<html>
+  <h1>Hello World</h1>
+  <p>This is a web page.</p>
+</html>
+```
+
+- It should be:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a web page.</p>
+  </body>
+</html>
+```
+
 ### Keep the syntax Organised
+
+- As pages grow, HTML organization becomes harder.
+- There are a few quick rules that keep things in line. They are:
+  - Use lowercase letters with element names, attributes and values.
+  - Indent nested elements.
+  - Strictly use double quotes. Never single, never omitted.
+  - Remove the forward slash at the end of self-closing elements.
+  - Omit the values on Boolean attributes.
+- Here's an example of that done badly:
+
+```html
+<Aside>
+<h3>Chicago</h3>
+<H5 HIDDEN='HIDDEN'>City in Illinois</H5>
+<img src=chicago.jpg alt="Chicago, the third most populous city in the United States" />
+<ul>
+<li>234 square miles</li>
+<li>2.715 million residents</li>
+</ul>
+</ASIDE>
+```
+
+- It should be:
+```html
+<aside>
+  <h3>Chicago</h3>
+  <h5 hidden>City in Illinois</h5>
+  <img src="chicago.jpg" alt="Chicago, the third most populous city in the United States">
+  <ul>
+    <li>234 square miles</li>
+    <li>2.715 million residents</li>
+  </ul>
+</aside>
+```
+
 ### Use practical ID & Class values
+
+- Describe the content, not how it looks. Then a change in style only needs to affect the CSS.
+- Bad code:
+
+```html
+<p class="red">Error! Please try again.</p>
+```
+- Good code:
+
+```html
+<p class="alert">Error! Please try again.</p>
+```
+
 ### Use the alternative text Attribute on Images
+
+- Always. 
+- Screen readers/ other accessibility software need the `alt` attribute to provide context for images.
+- It should be very descriptive of the image.
+- If the image's content isn't meaningful/relevant, it should be included, but blank.
+- If the image is meaningless (eg. it's part of the user interface) it should be a CSS background image, rather than a `<img>` element.
+- Bad code:
+```html
+<img src="puppy.jpg">
+```
+- Good code:
+```html
+<img src="puppy.jpg" alt="A beautiful, two-year-old hound mix puppy">
+```
+
 ### Seperate content from Style
+
+- Never do inline styles. Because pages 
+  - take longer to load
+  - are difficult to maintain
+  - are difficult for designers and developers
+- Inline CSS means styles cannot be re-used, which makes consistency very hard.
+- Instead use external style sheets.
+- Bad code:
+```html
+<p style="color: #393; font-size: 24px;">Thank you!</p>
+```
+- Good code:
+```html
+<p class="alert-success">Thank you!</p>
+```
+
 ### Avoid a case of "Divitis"
+
+- It's a lazy way to build and bloats the page. We look back and don't really know what each `div` is.
+- We should 
+  - tie multiple styles to a single element when we can.
+  - Use HTML5 structural elements where suitable.
+- Good code
+```html
+<div class="container">
+  <div class="article">
+    <div class="headline">Headlines Across the World</div>
+  </div>
+</div>
+```
+- Bad code:
+```html
+<div class="container">
+  <article>
+    <h1>Headlines Across the World</h1>
+  </article>
+</div>
+```
+
 ### Continually refactor code
+
+- Websites/ code bases are ever-growing.
+- Remember to remove old code and styles when editing a page.
+
 ## [CSS coding Practices](https://learn.shayhowe.com/html-css/writing-your-best-code/#css-coding-practices)
+
+- Keep code lean and well organised.
+
 ### Organise code with comments
+
+- CSS files can become pretty big. Finding the style we're looking for can be hard.
+- So let's organise styles in logical groups and comment each group, about what that group is for.
+- We can even create a contents table at the top of the file.
+- Bad code:
+```css
+header { ... }
+article { ... }
+.btn { ... }
+```
+- Good code:
+```css
+/* Primary header */
+header { ... }
+
+/* Featured article */
+article { ... }
+
+/* Buttons */
+.btn { ... }
+```
+
 ### Write CSS Using multiple lines & spaces
+
+- Each selector on a new line and each declaration indented.
+- Between the selector and the curly bracket is 1 space.
+- Within the declaration there is 1 space after the property-name and colon.
+- End each declaration with a semi-colon.
+- Bad code:
+```css
+a,.btn{background:#aaa;color:#f60;font-size:18px;padding:6px;}
+```
+- Good code:
+```css
+a,
+.btn {
+  background: #aaa;
+  color: #f60;
+  font-size: 18px;
+  padding: 6px;
+}
+```
+- Using multiple lines, comments and using spaces applies to HTML and many other coding languages.
+
 ### Use proper class names
+
+- Class names/values should be modular and should describe the content of an element.
+- The syntax should mirror css. So all lowercase and with hyphens.
+- Bad code:
+```css
+.Red_Box { ... }
+```
+- Good code:
+```css
+.alert-message { ... }
+```
+
 ### Build proficient selectors
+
+- If you don't keep an eye on it, css selectors become too long and too location specific.
+- The longer a selector is = the more prequalifiers it includes = the higher its specificity = the liklier it is to break the cascade.
+- Also, to keep the specificity low, **don't use IDs**, because they are:
+  - overly specific
+  - quickly raise the specificity of the selector.
+  - Often break the cascade.
+  - The cons greatly outweigh the pros.
+- Insead of IDs:
+  -  use shorter and primarily direct selectors
+  -  nest them only 2 or 3 levels deep.
+  -  remove as many location-based qualifiers as possible.
+-  Bad code:
+```css
+#aside #featured ul.news li a { ... }
+#aside #featured ul.news li a em.special { ... }
+```
+- Good code:
+```css
+.news a { ... }
+.news .special { ... }
+```
+
 ### Use specific classes when necessary
-### Use shorthand propertoes and values
+
+- CSS selectors can be so long/specific that they're hard to manage and cause a performance lag.
+- In that case just use a class. It may create more code in the HTML, but it will render faster and remove managing obstacles.
+- Bad code:
+```css
+section aside h1 em { ... } */-- if the em element is ever moved outside h1 the styles won't apply --*/
+```
+- Good code:
+```css
+.text-offset { ... } */-- so create a class for the element --*/
+```
+
+### Use shorthand properties and values
+
+- Most properties/values have a shorthand.
+- eg. instead of four different properties for the 4 sides of a box, use the `margin` shorthand.
+- Don't use shorthand if you're only targeting one value. It's easier to read and won't be easily overwritten
+- Bad code:
+```css
+img {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+button {
+  padding: 0 0 0 20px;
+}
+```
+- Good code:
+```css
+img {
+  margin: 5px 10px;
+}
+button {
+  padding-left: 20px;
+}
+```
+
 ### Use shorthand Hexadecimal Color values
+
+- When available use the 3 character hexadecimal shorthand.
+- Bad code:
+```css
+.module {
+  background: #DDDDDD;
+  color: #FF6600;
+}
+```
+- Good code:
+```css
+.module {
+  background: #ddd;
+  color: #f60;
+}
+```
+
 ### Drop Units from zero values
+
+- Lean down the code by omitting the units of zero values.
+- Bad code:
+```css
+div {
+  margin: 20px 0px;
+  letter-spacing: 0%;
+  padding: 0px 5px;
+}
+```
+- Good code:
+```css
+div {
+  margin: 20px 0;
+  letter-spacing: 0;
+  padding: 0 5px;
+}
+```
+
 ### Group and align vendor prefixes
+
+- CSS3 introduced vendor prefixes.
+- It's more work, but great styling.
+- But they must be kept organized.
+- Group and indent vendor prefixes so that the property names stack vertically with their values.
+- In the following 'good code' example keeps the `backgroun` property aligned left and the `linear-gradient()` functions indented to keep their values vertically stacked. The `box-sizing` property is indented as necessary to keep the zbox-sizingz properties and values vertically stacked.
+- Bad code:
+```css
+div {
+  background: -webkit-linear-gradient(#a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(#a1d3b0, #f6f1d3);
+  background: linear-gradient(#a1d3b0, #f6f1d3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+```
+- Good code:
+```css
+div {
+background: -webkit-linear-gradient(#a1d3b0, #f6f1d3);
+background:    -moz-linear-gradient(#a1d3b0, #f6f1d3);
+background:         linear-gradient(#a1d3b0, #f6f1d3);
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+```
+
 ### Modularize styles for reuse
 ## [Additional resources and links](https://learn.shayhowe.com/html-css/writing-your-best-code/#additional-resources)
 
