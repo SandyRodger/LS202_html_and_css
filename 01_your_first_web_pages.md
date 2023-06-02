@@ -821,7 +821,7 @@ the ID `#my-heading` selector will win. Using class selectors as muich as possib
 - Internal, external and inline CSS
 - How to set text, background colors, font families and font sizes.
 
-## [Quiz 1]
+## [Quiz 1](https://launchschool.com/quizzes/f8b5d870)
 
 | Q | 1st attempt | 2nd Attempt | 3rd Attempt(24th March)
 | :---: | :---: | :---: | :---: |
