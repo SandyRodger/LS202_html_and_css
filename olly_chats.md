@@ -51,4 +51,25 @@ What we talked about:
   - The [setting a table game](https://flukeout.github.io)
 - Maybe doing RB175 and LS202 simultaneously.
 - The benefits of doing a project while studying.
-  - "Don't teach screwdrivers when the student has never seen a screw"
+  - "Don't teach screw-drivers when the student has never seen a screw"
+
+## 13.6.23, 11:00
+
+What I've been up to:
+
+- Refactor calorie counter
+  - add year overview
+  - appreciate the necessity of testing now + comments
+- Everything is a box
+- Sentencing - references
+- Last coding meeting until 4th July
+- Bumped into ex-colleague who did the [Harvard online courses - CS50](https://pll.harvard.edu/subject/programming) in 7 months intensive.
+- LS202 might be the hardest course just because it's so boring and finicky. (It is, in fact, optional, I'm on lesson 2/8). How did you do it? What was your note-taking like?
+
+Questions:
+
+- this bug: zsh, my path in calorie counter
+
+What we talked about:
+
+-
