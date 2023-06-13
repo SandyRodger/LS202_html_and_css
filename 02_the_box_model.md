@@ -201,6 +201,25 @@
 ### Inline elements
 
 - Provide a small piece of semantic meaning to an element. Browsers use these to make a small change in how they display the element.
+- For example making text **bold**
+- These elements are inline by default:
+  - `span`
+  - `b`, `i`, `u`, `strong`, `em`
+  - `a`
+  - `sub` and `sup`
+  - `img`
+- Inline elements handle dimension properties differently from how `block` elements handle them. This makes things complicated.
+- Browsers handle left and right margins and padding for inline elements the same way as block elements, but other properties are handled differently.
+- That means concretely that for inline elements, browsers:
+  - ignore the `width` and `height` properties (except `img` elements) and in their place use values computed from the element content.
+  - ignore top and bottom margins
+  - don't ignore borders, but the results can look odd.
+  - don't ignore top and bottom padding (but this is invisible unless you have a border/background).
+- You can convert any element to an `inline` element with the `display: inline` CSS property. The most common reason to do so is to override a prior declaration.
+
+### Borders, padding, Margins and Inline elements
+
+- 
 
 ## [Box Sizing](
 ## [Practice Problems: The Box Model](
@@ -214,8 +233,8 @@
 |  | Once | Twice | Thrice | Got it?
 | :--- | :---: | :---: | :---: | :--- |
 |1. Introduction| 1/06/23 ||||
-|2	Everything is a box|
-|3 The Visual Formatting Model|
+|2	Everything is a box| 8/06/23 ||||
+|3 The Visual Formatting Model| 13/06/23 ||||
 |4 Box Sizing|
 |5 Practice Problems: The Box Model|
 |6 Padding and Margins|
