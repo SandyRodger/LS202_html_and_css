@@ -2,7 +2,12 @@
 
 Contents:
 
-[Lesson 1](#lesson-1-your-first-web-pages)
+- [Lesson 1]: your first web pages(#lesson-1-your-first-web-pages)
+- [Lesson 2: the box model](#lesson-2-the-box-model)
+- [Extra resources](#extra-resources)
+- [Olly chats](#olly-chats)
+- [Shay Howe tutorial](#shay-howe-tutorial)
+
 
 ## [Lesson 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md)
 ### [Welcome](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#welcome)
