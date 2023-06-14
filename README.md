@@ -2,7 +2,7 @@
 
 Contents:
 
-- [Lesson 1]: your first web pages(#lesson-1-your-first-web-pages)
+- [Lesson 1: your first web pages](#lesson-1-your-first-web-pages)
 - [Lesson 2: the box model](#lesson-2-the-box-model)
 - [Extra resources](#extra-resources)
 - [Olly chats](#olly-chats)
