@@ -46,11 +46,12 @@
 ### [Using the Chrome Inspector](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#using-the-chrome-inspector)
 #### [Google Inspector tutorials:](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#google-inspector-tutorials)
 ### [HTML and CSS Style Guide](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#html-and-css-style-guide)
-#### [Shay Howe Chapter 12](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#shay-howe-chapter-12)
+#### [Shay Howe Chapter 12: html/css best practices](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#shay-howe-chapter-12)
 #### [CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#css)
 ### [Summary](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#summary)
 ### [Quiz 1](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#quiz-1)
 ### [Overview](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#overview)
+
 ## [Lesson 2: The box model](https://github.com/SandyRodger/LS202_html_and_css/blob/main/02_the_box_model.md)
 ## [Extra resources](https://github.com/SandyRodger/LS202_html_and_css/blob/main/extra_resources.md)
 ## [Olly chats](https://github.com/SandyRodger/LS202_html_and_css/blob/main/olly_chats.md)
