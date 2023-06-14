@@ -6,10 +6,10 @@ Contents:
 - [Lesson 2: the box model](#lesson-2-the-box-model)
 - [Olly chats](#olly-chats)
 - [Shay Howe tutorial](#shay-howe-tutorial-chapters-1-2-3-and-12)
-  - [Lesson 1]()
-  - [Lesson 2]()
-  - [Lesson 3]()
-  - [Lesson 12]()
+  - [Lesson 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/tree/main#lesson-1-your-first-web-pages)
+  - [Lesson 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/tree/main#lesson-2-getting-to-know-html)
+  - [Lesson 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/tree/main#lesson-3-getting-to-know-css)
+  - [Lesson 12: writing your best code](#lesson-12---writing-your-best-code)
 
 
 ## [Lesson 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md)
