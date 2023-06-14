@@ -72,4 +72,7 @@ Questions:
 
 What we talked about:
 
--
+- the `.bashrc` file as a place to automate my bug-fix.
+- How the front end part of the course might not be necessary to complete entirely
+- how I'm skipping LS202
+- Olly showed me his projects from LS, but doesn't have his notes any more as they were on a since deleted app.
