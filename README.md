@@ -5,7 +5,7 @@ Contents:
 - [Lesson 1: your first web pages](#lesson-1-your-first-web-pages)
 - [Lesson 2: the box model](#lesson-2-the-box-model)
 - [Olly chats](#olly-chats)
-- [Shay Howe tutorial](#shay-howe-tutorial)
+- [Shay Howe tutorial](#shay-howe-tutorial-chapters-1-2-3-and-12)
 
 
 ## [Lesson 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md)
@@ -85,4 +85,7 @@ Contents:
 ### [Borders, padding, Margins and Inline elements](https://github.com/SandyRodger/LS202_html_and_css/blob/main/02_the_box_model.md#borders-padding-margins-and-inline-elements)
 
 ## [Olly chats](https://github.com/SandyRodger/LS202_html_and_css/blob/main/olly_chats.md)
+### [23.5.23](https://github.com/SandyRodger/LS202_html_and_css/blob/main/olly_chats.md#23523--1100)
+### [30.5.23](https://github.com/SandyRodger/LS202_html_and_css/blob/main/olly_chats.md#30523-1215)
+### [13.6.23](https://github.com/SandyRodger/LS202_html_and_css/blob/main/olly_chats.md#13623-1100)
 ## [Shay Howe tutorial: chapters 1, 2, 3 and 12](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md)
