@@ -586,7 +586,7 @@ body {
 ## [On your own: creating a simple page](https://launchschool.com/lessons/4495fbf7/assignments/a5c5771f)
 
 ## Practice Problems: CSS Selectors
-## [CSS Diner	](https://launchschool.com/lessons/4495fbf7/assignments/8b986401https://launchschool.com/lessons/4495fbf7/assignments/8e39567e)
+## [CSS Diner	](https://launchschool.com/lessons/4495fbf7/assignments/8b986401)
 ## [Using the Chrome Inspector](https://launchschool.com/lessons/4495fbf7/assignments/538a0597)
 
 ### Google Inspector tutorials:
