@@ -96,7 +96,7 @@ Contents:
 
 ## [Shay Howe tutorial: chapters 1, 2, 3 and 12](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md)
 
-## [Chapter 1 : Building your first web page](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#chapter-1--building-your-first-web-page)
+## [Chapter 1 : Building your first web page](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-1--building-your-first-web-page)
   - [What are HTML and CSS?](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#what-are-html-and-css)
   - [Understanding Common HTML terms](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#understanding-common-html-terms)
   - [Setting up the HTML document structure](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#setting-up-the-html-document-structure)
@@ -118,7 +118,7 @@ Contents:
 - [In Practice 2](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#in-practice-2)
 - [Summary](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#summary)
 
-## [Chapter 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#chapter-2-getting-to-know-html)
+## [Chapter 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-2-getting-to-know-html)
 - [Semantics overview](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#semantics-overview)
 - [Identifying divisions and spans](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#identifying-divisions-and-spans)
 - [Block v. inline elements](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#block-v-inline-elements)
