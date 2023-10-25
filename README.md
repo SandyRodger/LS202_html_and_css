@@ -170,7 +170,7 @@ Contents:
   - [Em](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#em)
 - [Summary](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#summary-2)
 
-## [Chapter 12 - writing your best code](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#chapter-12---writing-your-best-code)
+## [Chapter 12 - writing your best code](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-12---writing-your-best-code)
 - [HTML Coding Practices](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#html-coding-practices)
 - [Write standards-compliant Mark-up](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#write-standards-compliant-mark-up)
 - [Make use of Semantic Elements](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#make-use-of-semantic-elements)
