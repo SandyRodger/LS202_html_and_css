@@ -2,14 +2,15 @@
 
 Contents:
 
-- [Lesson 1: your first web pages](#lesson-1-your-first-web-pages)
-- [Lesson 2: the box model](#lesson-2-the-box-model)
-- [Olly chats](#olly-chats)
-- [Shay Howe tutorial](#shay-howe-tutorial-chapters-1-2-3-and-12)
-  - [Chapter 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-1--building-your-first-web-page)
-  - [Chapter 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-2-getting-to-know-html)
-  - [Chapter 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-3-getting-to-know-css)
-  - [Chapter 12: writing your best code](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-12---writing-your-best-code)
+- [Lesson 1: your first web pages](https://github.com/SandyRodger/LS202_html_and_css/tree/main#lesson-1-your-first-web-pages)
+- [Lesson 2: the box model](https://github.com/SandyRodger/LS202_html_and_css/tree/main#lesson-2-the-box-model)
+- [Olly chats](https://github.com/SandyRodger/LS202_html_and_css/tree/main#olly-chats)
+- [Shay Howe tutorial](https://github.com/SandyRodger/LS202_html_and_css/tree/main#shay-howe-tutorial-chapters-1-2-3-and-12)
+  - [Chapter 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/tree/main#chapter-1--building-your-first-web-page)
+  - [Chapter 2: Getting to know HTML](https://github.com/SandyRodger/LS202_html_and_css/tree/main#chapter-2-getting-to-know-html)
+  - [Chapter 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/tree/main#chapter-3-getting-to-know-css)
+  - [Chapter 12: writing your best code](https://github.com/SandyRodger/LS202_html_and_css/tree/main#chapter-12---writing-your-best-code)
+  
 
 
 ## [Lesson 1: your first web-pages](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md)
