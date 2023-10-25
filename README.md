@@ -147,7 +147,7 @@ Contents:
 - [In practice](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#in-practice-3)
 - [Summary](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#summary-1)
 
-## [Chapter 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#chapter-3-getting-to-know-css)
+## [Chapter 3: Getting to know CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#lesson-3-getting-to-know-css)
 - [The Cascade](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#the-cascade)
 - [Cascading properties](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#cascading-properties)
 - [Calculating Specificity](https://github.com/SandyRodger/LS202_html_and_css/blob/main/shay_howe_tutorial.md#calculating-specificity)
