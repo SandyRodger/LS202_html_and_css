@@ -46,6 +46,7 @@ Contents:
   - [Names](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#names)
     - [For attributes](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#for-attributes)
 - [Practice Problems: Semantics](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#practice-problems-semantics)
+      - [html5 element flowchart](https://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf_
 - [Walkthrough Project: A Simple Web Page](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#walkthrough-project-a-simple-web-page)
 - [Walkthrough : Adding style to your web-page](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#walkthrough--adding-style-to-your-web-page)
   - [Inline CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#inline-css)
@@ -64,6 +65,40 @@ Contents:
   - [CSS](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#css)
 - [Summary](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#summary)
 - [Quiz 1](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#quiz-1)
+
+  - 2nd try (12.5.25) (7/16 44%, same as last time, but different mistakes)
+1. d (<!DOCTYPE html>) 
+  - no, b, d
+2. a + d
+  - no, a (the doctype is a message for the browser, not part of the HTML.)
+3. a+ c
+  - and d
+4. c
+  - correct
+5. a + c
+  - and b
+6. a, c, d, e
+  - c+e
+7. a
+  - correct
+8. b, d,
+  - and c
+9. c
+  - correct
+10. c
+  - correct
+11. c, d
+  - correct
+12. b
+  - correct
+13. c, e
+  - d
+14. e
+  - b
+15. a, d
+  - correct
+16. a
+  - c
 - [Overview](https://github.com/SandyRodger/LS202_html_and_css/blob/main/01_your_first_web_pages.md#overview)
 
 ## [Lesson 2: The box model](https://github.com/SandyRodger/LS202_html_and_css/blob/main/02_the_box_model.md)
